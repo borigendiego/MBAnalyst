@@ -14,7 +14,6 @@ const OurServices = (props) => {
               <SeccionImagenes title={'Titulo 3'} description={'Descripcion 3'} image={logo} />
           </div>
           <button type="button">Click Me!</button>
-
       </div>
   )
 };

@@ -2,6 +2,7 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import OurServices from './components/OurServices'
+import WeAreGomi from "./components/WeAreGomi";
 
 function App() {
   return (
@@ -21,6 +22,9 @@ function App() {
         </a>
       </header>*/}
       <OurServices title={'Gomi section'} />
+      <div>
+          <WeAreGomi title={"We are Gomi"} />
+      </div>
     </div>
   );
 }
