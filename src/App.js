@@ -22,9 +22,7 @@ function App() {
         </a>
       </header>*/}
       <OurServices title={'Gomi section'} />
-      <div>
-          <WeAreGomi title={"We are Gomi"} />
-      </div>
+      <WeAreGomi title={"We are Gomi"} />
     </div>
   );
 }

@@ -1,16 +1,18 @@
 .imagenes-container {
     display: flex;
-    justify-content: center;
-}
-
-.section-contaimer {
-    
+    justify-content: space-evenly;
 }
 
 .section-whoweare {
+    text-align: right;
 
 }
 
 .description-text {
+    text-align: right;
+
+}
+
+.section-ourwork {
 
 }

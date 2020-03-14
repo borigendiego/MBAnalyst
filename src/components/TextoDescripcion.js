@@ -2,9 +2,8 @@ import React from "react";
 
 const  TextoDescripcion = (props) => {
     return(
-            <div>
-                <p>{props.description}</p>
-            </div>
+        <p>{props.description}</p>
     )
-}
+};
+
 export default TextoDescripcion
