@@ -3,6 +3,7 @@ import logo from './logo.svg';
 import './App.css';
 import OurServices from './components/OurServices'
 import WeAreGomi from "./components/WeAreGomi";
+import OurWork from "./components/OurWork";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       </header>*/}
       <OurServices title={'Gomi section'} />
       <WeAreGomi title={"We are Gomi"} />
+      <OurWork title={'Our Work'}/>
     </div>
   );
 }

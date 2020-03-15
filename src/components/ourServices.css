@@ -16,3 +16,8 @@
 .section-ourwork {
 
 }
+
+.our-work-image-list-container {
+    display: flex;
+    justify-content: space-evenly;
+}
