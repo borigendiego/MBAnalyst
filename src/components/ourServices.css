@@ -5,7 +5,7 @@
 
 .section-whoweare {
     text-align: right;
-
+    padding: 30px;
 }
 
 .description-text {
@@ -15,6 +15,16 @@
 
 .section-ourwork {
 
+}
+
+.footer-insignia {
+    width: 50px;
+    height: 50px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .our-work-image-list-container {

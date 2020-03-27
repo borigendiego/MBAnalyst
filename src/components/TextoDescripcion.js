@@ -1,6 +1,6 @@
 import React from "react";
 
-const  TextoDescripcion = (props) => {
+const TextoDescripcion = (props) => {
     return(
         <p>{props.description}</p>
     )
