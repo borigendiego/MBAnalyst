@@ -1,5 +1,4 @@
 import React from 'react'
-import logo from '../logo.svg';
 
 const SeccionImagenes = (props) => {
     return(
@@ -9,5 +8,5 @@ const SeccionImagenes = (props) => {
             <p>{props.description}</p>
         </div>
     )
-}
+};
 export default SeccionImagenes
