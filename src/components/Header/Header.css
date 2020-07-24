@@ -1,0 +1,17 @@
+.header {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    background-color: black;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+a {
+    width: 50px;
+    color: white;
+    font-family: Arial, serif;
+    padding: 25px;
+    margin-right: 25px;
+    font-size: large;
+    text-decoration: none;
+}
