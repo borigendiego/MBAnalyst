@@ -9,4 +9,4 @@ const Banner = (props) => {
     )
 };
 
-export default Banner;
+export default Banner

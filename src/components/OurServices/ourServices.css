@@ -1,0 +1,24 @@
+.container-section {
+    display: flex;
+}
+.ourservices-container {
+    padding: 20px;
+    width: 550px;
+    height: 200px;
+}
+
+.ourservices-text {
+    font-size: large;
+    font-family: "Comic Sans MS", sans-serif;
+}
+.ourservices-title {
+    font-size: 30px;
+}
+
+#box1, #box3 {
+    background-color: #000000;
+    color: #ffffff;
+}
+#box2 {
+    background-color: #f39f18;
+}

@@ -4,7 +4,7 @@ import logo from '../imagenes/logo.svg'
 import pelota from '../imagenes/pelota.jpg'
 import './ourServicess.css'
 
-const OurServices = (props) => {
+const ourServices = (props) => {
   return (
       <div className={'section-container'}>
           <h2>{props.title}</h2>
