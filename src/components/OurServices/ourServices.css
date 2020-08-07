@@ -1,24 +1,23 @@
 .container-section {
     display: flex;
+    margin: 0 70px;
 }
-.ourservices-container {
-    padding: 20px;
-    width: 550px;
-    height: 200px;
+h3 {
+    font-size: 35px;
+    font-family: "Candara", sans-serif
 }
-
-.ourservices-text {
-    font-size: large;
-    font-family: "Comic Sans MS", sans-serif;
+p {
+    font-size: 20px;
 }
-.ourservices-title {
-    font-size: 30px;
-}
-
 #box1, #box3 {
     background-color: #000000;
     color: #ffffff;
+    width: 550px;
+    padding: 20px;
 }
 #box2 {
     background-color: #f39f18;
+    width: 550px;
+    padding: 20px;
+    height: 250px;
 }
