@@ -1,6 +1,6 @@
 import React from 'react';
 import './ourServices.css';
-import '../imagenes/logo.svg'
+import '../imagenes/logo.svg';
 import OurServicesItem from '../OurServicesItem';
 
 const OurServices = (props) => {
