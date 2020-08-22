@@ -3,7 +3,8 @@ import './App.css';
 import Header from './components/Header/NeoHeader';
 import Banner from './components/Banner'
 import OurServices from './components/OurServices';
-import WhoWeAre from './components/WhoWeAre/WhoWeAre';
+import Index from './components/WhoWeAre';
+import Contact from './components/Contact';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
         <Header />
         <Banner />
         <OurServices />
-        <WhoWeAre />
+        <Index />
+        <Contact />
     </div>
   );
 }

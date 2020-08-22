@@ -1,7 +1,7 @@
 import React from 'react';
 import './whoWeAre.css';
 
-const WhoWeAre = (props) => {
+const Index = (props) => {
     return (
         <div className={'whoweare-section'}>
             <div className={'whoweare-content'}>
@@ -29,4 +29,4 @@ const WhoWeAre = (props) => {
     )
 };
 
-export default WhoWeAre
+export default Index
