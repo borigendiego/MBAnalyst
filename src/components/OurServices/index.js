@@ -1,5 +1,5 @@
 import React from 'react';
-import './ourServices.css';
+import './ourServices.scss';
 import '../imagenes/logo.svg';
 import OurServicesItem from '../OurServicesItem';
 import icono1 from '../imagenes/icono_1.png'
@@ -11,16 +11,25 @@ const OurServices = (props) => {
         <div className={'ourservices-section'}>
             <h1 className={'ourservices-title'}>OUR SERVICES</h1>
             <div className={'container-section'}>
-                <OurServicesItem image={icono1} title={'Power BI Cosulting'} text={'We design visually engaging dashboards\n' +
-                '                        using Power BI to capture what is critical to\n' +
-                '                        your business at a glance.'} id={'box1'}/>
-                <OurServicesItem image={icono2} title={'Business Analysis'} text={'We work with process owners to identify key\n' +
-                '                        business drivers, set targets and measure\n' +
-                '                        performance with the aim of transforming data\n' +
-                '                        into valuable information for decision making.'} id={'box2'}/>
-                <OurServicesItem image={icono3} title={'Executive reporting'} text={'We develop detailed executive summaries and\n' +
-                '                        business cases to support major business\n' +
-                '                        decisions.'} id={'box3'}/>
+                <OurServicesItem
+                    id={'box1'}
+                    image={icono1}
+                    title={'Power BI Cosulting'}
+                    text={'We design visually engaging dashboards using Power BI to capture what is critical to your business at a glance.'}
+                />
+                <OurServicesItem
+                    id={'box2'}
+                    image={icono2}
+                    title={'Business Analysis'}
+                    text={'We work with process owners to identify key business drivers, set targets and measure performance with the aim of transforming data into valuable information for decision making.'}
+
+                />
+                <OurServicesItem
+                    id={'box3'}
+                    image={icono3}
+                    title={'Executive reporting'}
+                    text={'We develop detailed executive summaries and business cases to support major business decisions.'}
+                />
             </div>
         </div>
     )
