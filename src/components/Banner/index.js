@@ -8,7 +8,7 @@ const Banner = (props) => {
     return(
         <div className={'banner'}>
             <div className={'banner-content'}>
-                <img src={Logo}/>
+                <img alt={'logo'} src={Logo}/>
                 <h2 className={'text'}>Better Data, Better Decisions</h2>
             </div>
         </div>
