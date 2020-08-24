@@ -9,7 +9,10 @@ const Banner = (props) => {
         <div className={'banner'}>
             <div className={'banner-content'}>
                 <img alt={'logo'} src={Logo}/>
-                <h2 className={'text'}>Better Data, Better Decisions</h2>
+                <div className={'text-container'}>
+                    <h2 className={'text'}><span className={'black-text'}>Better</span></h2>
+                    <h2 className={'text'}><span className={'black-text'}>Data,</span> Better Decisions</h2>
+                </div>
             </div>
         </div>
     )
