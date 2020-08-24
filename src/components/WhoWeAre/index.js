@@ -1,7 +1,7 @@
 import React from 'react';
 import './whoWeAre.css';
 
-const Index = (props) => {
+const WhoWeAre = (props) => {
     return (
         <div className={'whoweare-section'}>
             <div className={'whoweare-content'}>
@@ -13,11 +13,11 @@ const Index = (props) => {
                     through data analytics projects and
                     produce sustainable tools and resources
                     to decision-makers.
-                    With local presence in Mlbourne, we have
+                    With local presence in Melbourne, we have
                     extensive experience working remotely in
                     data projects around the world.
                     Whether you want to boost sales by
-                    undesrtanding leads generation,
+                    understanding leads generation,
                     conversion rates and the performance of
                     your latest marketing campaign, reduce
                     costs by measuring productivity or
@@ -29,4 +29,4 @@ const Index = (props) => {
     )
 };
 
-export default Index
+export default WhoWeAre

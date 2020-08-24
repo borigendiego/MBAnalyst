@@ -6,7 +6,7 @@ import Logo from '../assets/images/Transparent-logo.png'
 
 const Banner = (props) => {
     return(
-        <div className={'banner'}>
+        <div className={'banner'} id={'home'}>
             <div className={'banner-content'}>
                 <img alt={'logo'} src={Logo}/>
                 <div className={'text-container'}>

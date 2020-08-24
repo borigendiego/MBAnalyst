@@ -9,9 +9,7 @@
     width: 450px;
     background-color: rgba(243, 159, 24, 0.8);
     height: 680px;
-    padding-left: 35px;
-    padding-right: 35px;
-    padding-top: 20px;
+    padding: 20px 35px 0 35px;
 }
 .whoweare-text {
     font-size: 23px;
