@@ -4,6 +4,8 @@ import Header from './components/Header';
 import Banner from './components/Banner'
 import OurServices from './components/OurServices';
 import WhoWeAre from './components/WhoWeAre';
+import Index from './components/WhoWeAre';
+import OurWork from './components/OurWork';
 import Contact from './components/Contact';
 
 function App() {
@@ -13,6 +15,8 @@ function App() {
         <Banner />
         <OurServices />
         <WhoWeAre />
+        <Index />
+        <OurWork />
         <Contact />
     </div>
   );

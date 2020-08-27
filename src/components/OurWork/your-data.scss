@@ -1,0 +1,68 @@
+.your-data-container {
+  display: flex;
+  padding: 20px 80px;
+  box-sizing: border-box;
+}
+
+.items-wrapper {
+  width: 50%;
+  padding-right: 340px;
+  box-sizing: border-box;
+}
+
+.your-data-items {
+  display: flex;
+  align-items: center;
+
+  img {
+    width: 20%;
+  }
+}
+
+.your-data-rhombus-container {
+  width: 30%;
+  height: 70vh;
+  position: relative;
+}
+
+.rhombus {
+  width: 45%;
+  height: 45%;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  position: absolute;
+  z-index: -1;
+}
+
+.first {
+  top: 0;
+  bottom: 0;
+  background: red;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.second {
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  background: orange;
+}
+
+.third {
+  top: 0;
+  bottom: 0;
+  right: 0;
+  background: yellow;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.fourth {
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  background: green;
+}
