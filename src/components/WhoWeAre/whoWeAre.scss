@@ -1,0 +1,69 @@
+.who-we-are-sections {
+    margin-top: 100px;
+    display: flex;
+}
+
+.who-we-are-section {
+    width: calc(100% / 3);
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+}
+.first-section-overlay {
+    height: 100%;
+    width: 100%;
+    background-image: url('../assets/images/image7.jpg');
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.who-we-are-first-section {
+    text-align: left;
+    padding: 20px 35px 0 35px;
+    box-sizing: border-box;
+    background-color: rgba(243, 159, 24, 0.4);
+    position: relative;
+}
+
+.whoweare-text {
+    font-size: 20px;
+}
+
+.section-with-icon {
+    img, p {
+        opacity: 0.3;
+        transition: all 0.3s;
+    }
+
+    &:hover {
+        img, p {
+            opacity: 1;
+        }
+    }
+}
+
+.whoweare-logo-one {
+    width: 40%;
+}
+.whoweare-image-one {
+    width: 100%;
+    height: 50%;
+}
+
+.whoweare-logo-two {
+    width: 40%;
+}
+.whoweare-image-two {
+    width: 100%;
+    height: 50%;
+}
+.whoweare-section-paragraph {
+    font-size: 16px;
+}
+.whoweare-section-two-logotext {
+    color: #ffffff;
+    background-color: #000000;
+    height: 50%;
+}
