@@ -1,0 +1,11 @@
+.explore-section {
+    display: flex;
+    height: 600px;
+    align-items: flex-end;
+}
+.explore-container {
+    width: 20%;
+}
+.explore-logo {
+    width: 40%;
+}
