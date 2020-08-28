@@ -11,15 +11,15 @@ const YourData = () => {
             <div className={'your-data-container'}>
                 <div className={'items-wrapper'}>
                     <div className={'your-data-items'}>
-                        <img src={FirstIcon} />
+                        <img alt={'first-icon'} src={FirstIcon} />
                         <p>Define your key business drivers and track them through custom made dashboards.</p>
                     </div>
                     <div className={'your-data-items'}>
-                        <img src={FirstIcon} />
+                        <img alt={'second-icon'} src={FirstIcon} />
                         <p>Define your key business drivers and track them through custom made dashboards.</p>
                     </div>
                     <div className={'your-data-items'}>
-                        <img src={FirstIcon} />
+                        <img alt={'third-icon'} src={FirstIcon} />
                         <p>Define your key business drivers and track them through custom made dashboards.</p>
                     </div>
                 </div>
