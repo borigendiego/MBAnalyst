@@ -8,11 +8,31 @@ const Contact = (props) => {
             <form className={'contact-form'}>
                 <section className={'contact-item'}>
                     <label className={'contact-label'}>Number of dashboards</label>
-                    <input type={'number'} name={'dashboards'} id={'dashboards'} className={'contact-input'}/>
+                    <input type={'radio'} name={'dashboards'} id={'dashboards'} className={'contact-input'}/>
+                    <label for={'dashboards'}>1</label>
+                    <input type={'radio'} name={'dashboards'} id={'dashboards'} className={'contact-input'}/>
+                    <label for={'dashboards'}>2</label>
+                    <input type={'radio'} name={'dashboards'} id={'dashboards'} className={'contact-input'}/>
+                    <label for={'dashboards'}>3</label>
+                    <input type={'radio'} name={'dashboards'} id={'dashboards'} className={'contact-input'}/>
+                    <label for={'dashboards'}>4</label>
+                    <input type={'radio'} name={'dashboards'} id={'dashboards'} className={'contact-input'}/>
+                    <label for={'dashboards'}>5</label>
+                    <input type={'radio'} name={'dashboards'} id={'dashboards'} className={'contact-input'}/>
+                    <label htmlFor={'dashboards'}>More than 5</label>
                 </section>
                 <section className={'contact-item'}>
                     <label className={'contact-label'}>Number of data sources</label>
-                    <input type={'number'} name={'data-sources'} id={'data-sources'} className={'contact-input'}/>
+                    <input type={'radio'} name={'data-sources'} id={'data-sources'} className={'contact-input'}/>
+                    <label for={'data-sources'}>Not sure</label>
+                    <input type={'radio'} name={'data-sources'} id={'data-sources'} className={'contact-input'}/>
+                    <label for={'data-sources'}>1</label>
+                    <input type={'radio'} name={'data-sources'} id={'data-sources'} className={'contact-input'}/>
+                    <label for={'data-sources'}>2</label>
+                    <input type={'radio'} name={'data-sources'} id={'data-sources'} className={'contact-input'}/>
+                    <label for={'data-sources'}>3</label>
+                    <input type={'radio'} name={'data-sources'} id={'data-sources'} className={'contact-input'}/>
+                    <label for={'data-sources'}>More than 3</label>
                 </section>
                 <section className={'contact-item'}>
                     <label className={'contact-label'}>What data sources are you using? ( i.e SQL Server, Web, Excel, etc.)</label>

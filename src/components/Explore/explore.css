@@ -5,7 +5,17 @@
 }
 .explore-container {
     width: 20%;
+    padding: 20px;
 }
 .explore-logo {
-    width: 40%;
+    width: 60%;
+}
+#sec2, #sec4 .hexagon {
+    background-color: rgba(243, 159, 24, 0.8);
+}
+
+.hexagon {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: rgba(12, 16, 19, 0.9);
+    padding: 50px;
 }

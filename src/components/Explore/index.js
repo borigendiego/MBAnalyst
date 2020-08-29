@@ -17,6 +17,7 @@ const Explore = (props) => {
             />
             <ExploreItem
                 image={icono7}
+                id={'sec2'}
                 text={'Slice and dice your sales data and quickly break it down by region, product, customer,' +
                 'account, manager and others'}
             />
@@ -26,6 +27,7 @@ const Explore = (props) => {
             />
             <ExploreItem
                 image={icono9}
+                id={'sec4'}
                 text={'Set up alerts to quickly under performing areas and make corrective decisions'}
             />
             <ExploreItem
