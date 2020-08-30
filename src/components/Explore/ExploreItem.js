@@ -2,7 +2,7 @@ import React from 'react';
 
 const ExploreItem = (props) => {
   return (
-      <div id={props.id} className={'explore-container'}>
+      <div className={'explore-container'}>
           <div className={'hexagon'}>
               <img src={props.image} alt={'logo'} className={'explore-logo'}/>
           </div>
