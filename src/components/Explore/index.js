@@ -11,8 +11,8 @@ import ExploreItem from './ExploreItem';
 
 const Explore = (props) => {
     return (
-        <div>
-            <h1>Explore</h1>
+        <div className={'explore-section-container'}>
+            <h1 className={'explore-section-title'}>Explore</h1>
             <div className={'explore-section'}>
                 <ExploreItem
                     image={icono6}
