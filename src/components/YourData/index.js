@@ -37,10 +37,10 @@ const YourData = () => {
                         <img src={FirstIconWhite} alt={'second-icon'} className={'your-data-icon'}/>
                     </div>
                     <div className={'rhombus third'}>
-                        <img src={Image} alt={'image'} className={'your-data-img'} />
+                        <img src={Image} alt={'third-icon'} className={'your-data-img'} />
                     </div>
                     <div className={'rhombus fourth'}>
-                        <img src={ThirdIconWhite} alt={'third-icon'} className={'your-data-icon'}/>
+                        <img src={ThirdIconWhite} alt={'fourth-icon'} className={'your-data-icon'}/>
                     </div>
                 </div>
             </div>
