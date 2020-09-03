@@ -17,9 +17,9 @@ function App() {
         <Banner />
         <OurServices />
         <WhoWeAre />
-        <OurWork />
         <Explore />
         <YourData />
+        <OurWork />
         <Contact />
     </div>
   );
