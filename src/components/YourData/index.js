@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 //css
 import './your-data.scss';
 //Images
@@ -11,35 +11,48 @@ import ThirdIconOrange from '../assets/icons/icono_13.png'
 import Image from '../assets/images/image5.jpg'
 
 const YourData = () => {
+    const [isLeftHover, setIsLeftHover] = useState(false);
+    const [isTopHover, setIsTopHover] = useState(false);
+    const [isBottomHover, setIsBottomHover] = useState(false);
+
     return (
         <div className={'your-data-section'}>
             <h1 className={'your-data-title'}>YOUR DATA</h1>
             <div className={'your-data-container'}>
                 <div className={'items-wrapper'}>
-                    <div className={'your-data-items'}>
-                        <img alt={'first-icon'} src={FirstIconOrange} />
+                    <div className={`${isTopHover ? 'your-data-items hover-element' : 'your-data-items'}`}>
+                        <img alt={'top-icon'} src={FirstIconOrange} />
                         <p>Define your key business drivers and track them through custom made dashboards.</p>
                     </div>
-                    <div className={'your-data-items'}>
-                        <img alt={'second-icon'} src={SecondIconOrange} />
+                    <div className={`${isLeftHover ? 'your-data-items hover-element' : 'your-data-items'}`}>
+                        <img alt={'left-icon'} src={SecondIconOrange} />
                         <p>Visualise commercial trends to support data driven decisions making.</p>
                     </div>
-                    <div className={'your-data-items'}>
-                        <img alt={'third-icon'} src={ThirdIconOrange} />
+                    <div className={`${isBottomHover ? 'your-data-items hover-element' : 'your-data-items'}`}>
+                        <img alt={'bottom-icon'} src={ThirdIconOrange} />
                         <p>Understand what makes your business grow and monitor it at glance.</p>
                     </div>
                 </div>
                 <div className={'your-data-rhombus-container'}>
-                    <div className={'rhombus first'}>
-                        <img src={SecondIconWhite} alt={'first-icon'} className={'your-data-icon'}/>
+                    <div className={'rhombus left'}
+                         onMouseEnter={() => setIsLeftHover(true)}
+                         onMouseLeave={() => setIsLeftHover(false)}
+                    >
+                        <img src={SecondIconWhite} alt={'left-icon'} className={'your-data-icon'}/>
                     </div>
-                    <div className={'rhombus second'}>
-                        <img src={FirstIconWhite} alt={'second-icon'} className={'your-data-icon'}/>
+                    <div className={'rhombus top'}
+                         onMouseEnter={() => setIsTopHover(true)}
+                         onMouseLeave={() => setIsTopHover(false)}
+                    >
+                        <img src={FirstIconWhite} alt={'top-icon'} className={'your-data-icon'}/>
                     </div>
-                    <div className={'rhombus third'}>
-                        <img src={Image} alt={'third-icon'} className={'your-data-img'} />
+                    <div className={'rhombus right'}>
+                        <img src={Image} alt={'right-image'} className={'your-data-img'} />
                     </div>
-                    <div className={'rhombus fourth'}>
+                    <div className={'rhombus bottom'}
+                         onMouseEnter={() => setIsBottomHover(true)}
+                         onMouseLeave={() => setIsBottomHover(false)}
+                    >
                         <img src={ThirdIconWhite} alt={'fourth-icon'} className={'your-data-icon'}/>
                     </div>
                 </div>
