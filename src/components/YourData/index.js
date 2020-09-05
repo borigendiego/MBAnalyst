@@ -47,7 +47,7 @@ const YourData = () => {
                         <img src={FirstIconWhite} alt={'top-icon'} className={'your-data-icon'}/>
                     </div>
                     <div className={'rhombus right'}>
-                        <img src={Image} alt={'right-image'} className={'your-data-img'} />
+                        <img src={Image} alt={'right'} className={'your-data-img'} />
                     </div>
                     <div className={'rhombus bottom'}
                          onMouseEnter={() => setIsBottomHover(true)}
