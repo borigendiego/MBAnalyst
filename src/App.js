@@ -7,6 +7,7 @@ import WhoWeAre from './components/WhoWeAre';
 import OurWork from './components/OurWork';
 import Contact from './components/Contact';
 import Explore from './components/Explore';
+import Three from "./components/Three";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <WhoWeAre />
         <Explore />
         <OurWork />
+        <Three />
         <Contact />
     </div>
   );

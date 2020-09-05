@@ -1,0 +1,21 @@
+.three-section {
+    display: flex;
+    align-items: flex-end;
+    align-content: flex-end;
+    background-image: url('../assets/images/image6.jpg');
+    background-size: cover;
+    margin: 100px 0;
+    padding: 50px 0 0 0;
+}
+#black-box {
+    background-color: rgb(12, 16, 19);
+}
+
+.three-logo {
+    width: 30%;
+    background-color: rgba(243, 159, 24, 0.9);
+}
+.three-logo-container {
+    align-items: flex-end;
+    align-content: flex-end;
+}
