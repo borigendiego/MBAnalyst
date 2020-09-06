@@ -19,7 +19,7 @@
   transition: all 0.3s;
 
   img {
-    width: 30%;
+    width: 20%;
     height: 100%;
   }
 
@@ -28,6 +28,7 @@
     text-align: left;
   }
 }
+
 .your-data-title {
   font-size: 120pt;
   font-weight: 200;
@@ -118,13 +119,22 @@
   }
 }
 
+.rhombus-hover {
+  width: 55%;
+  height: 55%;
+}
+
 .hover-element {
   transition: all 0.3s;
   background-color: #c8c8c8;
-  left: 100px;
+  left: 12%;
   height: 40%;
 
   p {
     font-weight: 600;
+  }
+
+  img {
+    width: 30%;
   }
 }
