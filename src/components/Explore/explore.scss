@@ -3,11 +3,11 @@
 .explore-section-container {
     position: relative;
     padding: 140px 0 0 0;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 .explore-section-title {
-    font-size: 170pt;
+    font-size: 200pt;
     z-index: 1;
     position: absolute;
     top: 0;
@@ -15,6 +15,8 @@
     margin: 0;
     font-family: $section-title-font-family;
     font-weight: 200;
+    opacity: 0.3;
+    padding-left: 20px;
 }
 
 .explore-section {
@@ -63,4 +65,7 @@
 
 .explore-text {
     height: 50%;
+    padding: 0 30px;
+    font-family: Arial, serif;
+    font-size: 18px;
 }

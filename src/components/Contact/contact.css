@@ -25,6 +25,7 @@ input[type=submit] {
     padding: 5px 0 5px 40px;
 }
 .contact-label {
-
+    font-family: Arial, serif;
+    font-weight: bold;
     display: block;
 }

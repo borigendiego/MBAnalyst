@@ -6,8 +6,8 @@ const OurServicesItem = (props) => {
             <div className={'our-service-item-image'} style={{backgroundImage:`url(${props.image})`}}/>
             {/*<img className={'our-service-item-image'} src={props.image} />*/}
             <div className={'our-service-item-description-wrapper'}>
-                <h3>{props.title}</h3>
-                <p>{props.text}</p>
+                <h3 className={'our-service-item-title'}>{props.title}</h3>
+                <p className={'our-service-item-text'}>{props.text}</p>
             </div>
         </div>
     )

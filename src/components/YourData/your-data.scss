@@ -1,3 +1,5 @@
+@import "../../variables";
+
 .your-data-container {
   display: flex;
   padding: 0 80px 20px 80px;
@@ -30,10 +32,11 @@
 }
 
 .your-data-title {
+  font-family: $section-title-font-family;
   font-size: 120pt;
   font-weight: 200;
   text-align: right;
-  opacity: 0.2;
+  opacity: 0.3;
   padding-right: 40px;
   margin: 0;
 }

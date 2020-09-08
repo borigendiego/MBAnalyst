@@ -1,3 +1,4 @@
+
 .container-section {
     display: flex;
     margin: 0 80px;
@@ -51,4 +52,13 @@
         opacity: 1;
         height: 40%;
     }
+}
+.our-service-item-title{
+    font-family: Arial, serif;
+    font-size: 25px;
+}
+.our-service-item-text {
+    font-family: Arial, serif;
+    padding: 0 40px;
+    font-size: 20px;
 }
