@@ -1,3 +1,5 @@
+@import "../../variables";
+
 .banner {
     height: 100vh;
     background-image: url('../assets/images/image1.jpg');
@@ -24,8 +26,10 @@
 }
 
 .text {
-    font-family: "Candara", sans-serif;
-    font-size: 50px;
+    font-family: adobe-garamond-pro,serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 70px;
     color: #ffffff;
     display: flex;
     justify-content: flex-start;
@@ -36,4 +40,6 @@
     color: black;
     width: 20%;
     text-align: right;
+    box-sizing: border-box;
+    padding-right: 4px;
 }
