@@ -1,0 +1,59 @@
+@import "../../variables";
+
+.three-section {
+    display: flex;
+    background-image: url('../assets/images/image6.jpg');
+    background-size: 100% 60%;
+    background-repeat: no-repeat;
+    margin: 100px 0;
+    height: 70vh;
+    position: relative;
+}
+#black-box {
+    background-color: rgb(12, 16, 19);
+}
+
+.three-logo {
+    width: 30%;
+    background-color: $main-orange;
+}
+
+.three-text {
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 600ms, visibility 600ms;
+    width: 60%;
+}
+
+.three-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    top: 30%;
+
+    &:hover {
+        .three-arrow {
+            height: 40px;
+        }
+
+        .three-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
+.three-logo-container:nth-child(even) {
+    .three-logo {
+        background-color: red;
+    }
+}
+
+.three-arrow {
+    width: 20%;
+    height: 0;
+    background: $main-orange;
+    clip-path: polygon(100% 0, 0 0, 50% 100%);
+    transition: all 0.3s;
+}
