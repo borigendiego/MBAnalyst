@@ -1,6 +1,6 @@
 import React from 'react';
 import ThreeItem from './ThreeItem';
-import './three.css';
+import './three.scss';
 import Icono1 from '../assets/icons/icono_14.png'
 import Icono2 from '../assets/icons/icono_15.png'
 import Icono3 from '../assets/icons/icono_16.png'
