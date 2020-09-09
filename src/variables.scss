@@ -1,10 +1,16 @@
 $main-orange: rgba(243, 159, 24, 0.9);
 $section-title-font-family: 'CODE light';
-
+$subtitle-font-family: 'CODE bold';
 
 @font-face {
   font-family: 'CODE light';
   font-style: normal;
   font-weight: 200;
   src: url('./components/assets/fonts/CODE-light.otf');
+}
+
+@font-face {
+  font-family: 'CODE bold';
+  font-style: normal;
+  src: url('./components/assets/fonts/CODE-bold.otf');
 }

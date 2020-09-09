@@ -12,7 +12,7 @@ const WhoWeAre = () => {
         <div className={'who-we-are-sections'}>
             <div className={'who-we-are-first-section who-we-are-section'}>
                 <div className={'first-section-overlay'}/>
-                <h1>WHO WE ARE</h1>
+                <h1 className={'who-we-are-title'}>WHO WE ARE</h1>
                 <p className={'whoweare-text'}>Our mission is to improve businesses thought data analytics
                 projects and produce sustainable tools and resources to decision-makers.
                 Whether you want to boost sales by understanding leads generation, conversion rates and the

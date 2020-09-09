@@ -1,3 +1,5 @@
+@import "../../variables";
+
 .who-we-are-sections {
     margin-top: 100px;
     display: flex;
@@ -8,6 +10,12 @@
     display: flex;
     flex-direction: column;
     background-color: #000000;
+}
+.who-we-are-title {
+    font-family: $subtitle-font-family;
+    font-size: 80px;
+    position: relative;
+    bottom: 110px;
 }
 .first-section-overlay {
     height: 100%;
@@ -28,7 +36,7 @@
 }
 
 .whoweare-text {
-    font-size: 20px;
+    font-size: 25px;
 }
 
 .section-with-icon {

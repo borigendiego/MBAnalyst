@@ -1,10 +1,11 @@
 import React from 'react';
-import './contact.css';
+import './contact.scss';
 
 const Contact = (props) => {
     return(
         <div className={'contact-section'} id={'contact'}>
-            <h1>CONTACT AND GET MY QUOTE</h1>
+            <h1 className={'contact-first-title'}>CONTACT</h1>
+            <h1 className={'contact-second-title'}>AND GET MY QUOTE</h1>
             <form className={'contact-form'}>
                 <section className={'contact-item'}>
                     <label className={'contact-label'}>Number of dashboards</label>
