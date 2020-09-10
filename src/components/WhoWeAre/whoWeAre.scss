@@ -10,12 +10,15 @@
     display: flex;
     flex-direction: column;
     background-color: #000000;
-}
-.who-we-are-title {
-    font-family: $subtitle-font-family;
-    font-size: 80px;
-    position: relative;
-    bottom: 110px;
+
+    h1 {
+        position: relative;
+        top: -12%;
+        font-size: 68px;
+        width: 100%;
+        text-align: center;
+        font-family: $sections-sub-title-font-family;
+    }
 }
 .first-section-overlay {
     height: 100%;
@@ -29,17 +32,24 @@
 }
 .who-we-are-first-section {
     text-align: left;
-    padding: 20px 35px 0 35px;
     box-sizing: border-box;
     background-color: rgba(243, 159, 24, 0.4);
     position: relative;
 }
 
 .whoweare-text {
-    font-size: 25px;
+    font-size: 20px;
+    padding: 0 50px;
 }
 
 .section-with-icon {
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
     img, p {
         opacity: 0.3;
         transition: all 0.3s;
