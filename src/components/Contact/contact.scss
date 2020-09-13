@@ -4,21 +4,25 @@
   background-image: url('../assets/images/image7.jpg');
   background-size: cover;
 }
-.contact-first-title {
-  font-size: 80px;
+
+.contact-title-section {
   text-align: right;
   position: relative;
-  bottom: 40px;
-  right: 15px;
-}
-.contact-second-title {
-  font-family: $section-title-font-family;
-  font-size: 60px;
-  text-align: right;
-  position: relative;
+  bottom: 35px;
   right: 20px;
-  bottom: 90px;
+
+  .contact-first-title {
+    font-size: 80px;
+    font-family: $sections-sub-title-font-family;
+    margin-bottom: 10px;
+  }
+  .contact-second-title {
+    margin-top: 0;
+    font-family: $section-title-font-family;
+    font-size: 60px;
+  }
 }
+
 
 .contact-form {
   display: inline;
