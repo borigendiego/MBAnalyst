@@ -14,7 +14,7 @@
     h1 {
         position: relative;
         top: -12%;
-        font-size: 68px;
+        font-size: 82px;
         width: 100%;
         text-align: center;
         font-family: $sections-sub-title-font-family;
@@ -37,9 +37,13 @@
     position: relative;
 }
 
-.whoweare-text {
-    font-size: 20px;
-    padding: 0 50px;
+.who-we-are-text {
+    font-size: 22px;
+    padding: 10px 50px;
+    text-align: justify;
+}
+.who-we-are-text-s {
+    letter-spacing: 2px;
 }
 
 .section-with-icon {
@@ -62,27 +66,28 @@
     }
 }
 
-.whoweare-logo-one {
+.who-we-are-logo-one {
     width: 40%;
 }
-.whoweare-image-one {
+.who-we-are-image-one {
     width: 100%;
     height: 50%;
 }
 
-.whoweare-logo-two {
+.who-we-are-logo-two {
     width: 40%;
 }
-.whoweare-image-two {
+.who-we-are-image-two {
     width: 100%;
     height: 50%;
 }
-.whoweare-section-paragraph {
+.who-we-are-section-paragraph {
     font-size: 24px;
     font-family: Arial, serif;
     padding: 0 9px;
+    text-align: center;
 }
-.whoweare-section-two-logotext {
+.who-we-are-section-two-logo-text {
     color: #ffffff;
     background-color: rgb(12, 16, 19);
     height: 50%;

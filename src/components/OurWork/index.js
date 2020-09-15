@@ -8,7 +8,7 @@ import { Carousel } from 'react-responsive-carousel';
 
 const OurWork = (props) => {
     return (
-        <div className={'our-work-container'}>
+        <div className={'our-work-container'} id={'work'}>
             <h1 className={'section-subtitle'}>OUR WORK</h1>
             <Carousel
                 infiniteLoop={true}

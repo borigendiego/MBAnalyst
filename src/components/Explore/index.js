@@ -17,24 +17,24 @@ const Explore = (props) => {
                 <ExploreItem
                     image={icono6}
                     text={'Get real time visibility of sales performance against Kpls with automatically' +
-                    'refreshed dashboards'}
+                    ' refreshed dashboards.'}
                 />
                 <ExploreItem
                     image={icono7}
                     text={'Slice and dice your sales data and quickly break it down by region, product, customer,' +
-                    'account, manager and others'}
+                    'account, manager and others.'}
                 />
                 <ExploreItem
                     image={icono8}
-                    text={'See historical trends and forecast future performance'}
+                    text={'See historical trends and forecast future performance.'}
                 />
                 <ExploreItem
                     image={icono9}
-                    text={'Set up alerts to quickly under performing areas and make corrective decisions'}
+                    text={'Set up alerts to quickly under performing areas and make corrective decisions.'}
                 />
                 <ExploreItem
                     image={icono10}
-                    text={'Access your dashboards on the go from your mobile or tablet'}
+                    text={'Access your dashboards on the go from your mobile or tablet.'}
                 />
             </div>
         </div>

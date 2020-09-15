@@ -26,7 +26,8 @@ const YourData = () => {
                         onMouseLeave={() => setIsTopHover(false)}
                     >
                         <img alt={'top-icon'} src={FirstIconOrange} />
-                        <p>Define your key business drivers and track them through custom made dashboards.</p>
+                        <p className={'your-data-text'}>Define your key business drivers and track them through
+                            custom made dashboards.</p>
                     </div>
                     <div
                         className={`${isLeftHover ? 'your-data-items hover-element' : 'your-data-items'}`}
@@ -34,7 +35,8 @@ const YourData = () => {
                         onMouseLeave={() => setIsLeftHover(false)}
                     >
                         <img alt={'left-icon'} src={SecondIconOrange} />
-                        <p>Visualise commercial trends to support data driven decisions making.</p>
+                        <p className={'your-data-text'}>Visualise commercial trends to support
+                            data driven decisions making.</p>
                     </div>
                     <div
                         className={`${isBottomHover ? 'your-data-items hover-element' : 'your-data-items'}`}
@@ -42,7 +44,8 @@ const YourData = () => {
                         onMouseLeave={() => setIsBottomHover(false)}
                     >
                         <img alt={'bottom-icon'} src={ThirdIconOrange} />
-                        <p>Understand what makes your business grow and monitor it at glance.</p>
+                        <p className={'your-data-text'}>Understand what makes your business
+                            grow and monitor it at glance.</p>
                     </div>
                 </div>
                 <div className={'your-data-rhombus-container'}>
