@@ -10,6 +10,7 @@
   position: relative;
   bottom: 35px;
   right: 20px;
+  z-index: 2;
 
   .contact-first-title {
     font-size: 80px;
@@ -22,8 +23,11 @@
     font-size: 60px;
   }
 }
-
-
+.contact-border {
+  margin: 0 350px 0 30px;
+  padding: 60px 0 50px 0;
+  border: 10px solid $main-orange;
+}
 .contact-form {
   display: inline;
   align-content: start;
@@ -32,7 +36,20 @@
 .contact-input {
   border: 1px solid #ccc;
   border-radius: 4px;
-  padding: 7px 40px;
+  height: 40px;
+  width: 25%;
+  padding-left: 5px;
+}
+.contact-input-radio {
+  margin: 5px 7px;
+  width: 20px;
+}
+.contact-input-box {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 80%;
+  width: 25%;
+  padding-left: 5px;
 }
 input[type=submit] {
   background-color: #4CAF50;
