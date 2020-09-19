@@ -9,7 +9,7 @@ import icono3 from '../imagenes/icono_3.png'
 const OurServices = (props) => {
     return (
         <div className={'ourservices-section'} id={'services'}>
-            <h1 className={'our-services-title section-subtitle'}>OUR SERVICES</h1>
+            <h1 className={'section-subtitle'}>OUR SERVICES</h1>
             <div className={'container-section'}>
                 <OurServicesItem
                     id={'box1'}
