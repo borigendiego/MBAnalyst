@@ -1,10 +1,21 @@
 @import "../../variables.scss";
 
 .contact-section {
-  background-image: url('../assets/images/image7.jpg');
-  background-size: cover;
+  position: relative;
+  z-index: 1;
 }
-
+.contact-section::after {
+  background-image: url('../../components/assets/images/image7.jpg');
+  background-size: cover;
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
 .contact-title-section {
   text-align: right;
   position: relative;
