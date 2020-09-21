@@ -5,7 +5,9 @@
   z-index: 1;
 }
 .contact-section::after {
-  background-image: url('../../components/assets/images/image7.jpg');
+  background-image:
+          linear-gradient(to left, rgba(245, 246, 252, 0.01), rgba(255, 253, 253, 0.75)),
+          url('../../components/assets/images/image7.jpg');
   background-size: cover;
   content: "";
   opacity: 0.5;
