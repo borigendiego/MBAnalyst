@@ -40,6 +40,7 @@
 .our-service-item:hover {
     .our-service-item-image {
         height: 50%;
+        margin-top: 80px;
     }
 
     .our-service-item-description-wrapper {
@@ -48,10 +49,16 @@
         opacity: 1;
         height: 50%;
     }
+
+    .our-service-item-title {
+        visibility: hidden;
+    }
 }
 .our-service-item-title{
     font-family: Arial, serif;
     font-size: 25px;
+    text-align: center;
+    padding-bottom: 20px;
 }
 .our-service-item-text {
     font-family: Arial, serif;
