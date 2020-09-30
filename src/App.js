@@ -18,10 +18,10 @@ function App() {
         <Banner />
         <OurServices />
         <WhoWeAre />
-        <OurWork />
         <Explore />
         <YourData />
         <Three />
+        <OurWork />
         <Contact />
     </div>
   );
