@@ -27,6 +27,12 @@
     z-index: 2;
 }
 
+/*This is the way to select all the siblings but not the hover one*/
+.explore-section:hover > .explore-container:not(:hover){
+    filter: blur(8px);
+    -webkit-filter: blur(8px);
+}
+
 .explore-container {
     width: 20%;
     height: 100%;
