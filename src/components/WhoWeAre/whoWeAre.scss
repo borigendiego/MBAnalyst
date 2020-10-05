@@ -3,6 +3,7 @@
 .who-we-are-sections {
     margin-top: 100px;
     display: flex;
+    height: 80vh;
 }
 
 .who-we-are-section {
@@ -34,14 +35,14 @@
 .who-we-are-first-section {
     text-align: left;
     box-sizing: border-box;
-    background-color: rgba(243, 159, 24, 0.4);
+    background-color: rgba(243, 159, 24, 0.5);
     position: relative;
 }
 
 .who-we-are-text {
-    font-size: 22px;
+    font-size: 21px;
     padding: 10px 50px;
-    text-align: justify;
+    text-align: left;
 }
 .who-we-are-text-s {
     letter-spacing: 2px;
@@ -83,10 +84,11 @@
     height: 50%;
 }
 .who-we-are-section-paragraph {
-    font-size: 24px;
+    font-size: 21px;
     font-family: Arial, serif;
-    padding: 0 9px;
-    text-align: center;
+    text-align: left;
+    margin:  0 50px 40px 50px;
+    padding: 0 10px;
 }
 .who-we-are-section-two-logo-text {
     color: #ffffff;
