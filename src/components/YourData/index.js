@@ -26,8 +26,8 @@ const YourData = () => {
                         onMouseLeave={() => setIsTopHover(false)}
                     >
                         <img alt={'top-icon'} src={FirstIconOrange} />
-                        <p className={'your-data-text'}>Define your key business drivers and track them through
-                            custom made dashboards.</p>
+                        <p className={'your-data-text'}>Say goodbye to clunky spreadsheets,
+                            static views and manually compiled reports prone to human error</p>
                     </div>
                     <div
                         className={`${isLeftHover ? 'your-data-items hover-element' : 'your-data-items'}`}
@@ -35,8 +35,8 @@ const YourData = () => {
                         onMouseLeave={() => setIsLeftHover(false)}
                     >
                         <img alt={'left-icon'} src={SecondIconOrange} />
-                        <p className={'your-data-text'}>Visualise commercial trends to support
-                            data driven decisions making.</p>
+                        <p className={'your-data-text'}>Discover powerful insights within your existing data to
+                            identify areas of improvement, streamline operations and make evidence-based decisions. </p>
                     </div>
                     <div
                         className={`${isBottomHover ? 'your-data-items hover-element' : 'your-data-items'}`}
@@ -44,8 +44,9 @@ const YourData = () => {
                         onMouseLeave={() => setIsBottomHover(false)}
                     >
                         <img alt={'bottom-icon'} src={ThirdIconOrange} />
-                        <p className={'your-data-text'}>Understand what makes your business
-                            grow and monitor it at glance.</p>
+                        <p className={'your-data-text'}>Get a BI solution tailored to your business needs to
+                            transform your data into actionable intelligence in the most efficient
+                            and sustainable way.</p>
                     </div>
                 </div>
                 <div className={'your-data-rhombus-container'}>

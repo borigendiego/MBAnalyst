@@ -12,29 +12,32 @@ import ExploreItem from './ExploreItem';
 const Explore = (props) => {
     return (
         <div className={'explore-section-container'}>
-            <h1 className={'explore-section-title'}>Explore</h1>
+            <h1 className={'explore-section-title'}>Why choose a BI solution?</h1>
             <div className={'explore-section'}>
                 <ExploreItem
                     image={icono6}
-                    text={'Get real time visibility of sales performance against Kpls with automatically' +
-                    ' refreshed dashboards.'}
+                    text={'Get real time visibility of your business KPIs and save significant costs by' +
+                    ' switching manual reporting activities with fully automated reports and scheduled refreshes.'}
                 />
                 <ExploreItem
                     image={icono7}
-                    text={'Slice and dice your sales data and quickly break it down by region, product, customer,' +
-                    'account, manager and others.'}
+                    text={'Offers data analysis without the requirement of specialised technical support,' +
+                    ' with a strong, intuitive interface.'}
                 />
                 <ExploreItem
                     image={icono8}
-                    text={'See historical trends and forecast future performance.'}
+                    text={'Saves you time with customised information dashboards, which are moulded to your' +
+                    ' organisation\'s specific needs.'}
                 />
                 <ExploreItem
                     image={icono9}
-                    text={'Set up alerts to quickly under performing areas and make corrective decisions.'}
+                    text={'Eliminates speed and memory restrictions thanks to a robust cloud environment,' +
+                    ' enabling data to be found and analysed rapidly.'}
                 />
                 <ExploreItem
                     image={icono10}
-                    text={'Access your dashboards on the go from your mobile or tablet.'}
+                    text={'Allows you to view reports instantly on multiple web-connected devices,' +
+                    ' including iOS, Android and Windows.'}
                 />
             </div>
         </div>

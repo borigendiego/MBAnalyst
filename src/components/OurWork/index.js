@@ -22,6 +22,8 @@ const OurWork = (props) => {
                         </div>)
                 }
             </Carousel>
+            <p className={'our-work-text'}>Are you ready to accelerate your business growth?<br/> Get in touch to
+                discover more about what MBAnalyst could do for your business.</p>
         </div>
     )
 };
