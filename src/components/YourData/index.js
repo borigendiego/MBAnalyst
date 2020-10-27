@@ -17,7 +17,7 @@ const YourData = () => {
 
     return (
         <div className={'your-data-section'}>
-            <h1 className={'your-data-title'}>YOUR DATA</h1>
+            <h1 className={'your-data-title'}>EXPLORE YOUR DATA</h1>
             <div className={'your-data-container'}>
                 <div className={'items-wrapper'}>
                     <div
