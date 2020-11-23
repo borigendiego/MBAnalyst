@@ -4,7 +4,7 @@ import '../Banner/Banner.scss';
 //Image
 import Logo from '../assets/images/Transparent-logo.png'
 
-const Banner = (props) => {
+const Banner = () => {
     return(
         <div className={'banner'} id={'home'}>
             <div className={'banner-content'}>

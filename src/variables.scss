@@ -2,7 +2,15 @@ $main-orange: rgba(243, 159, 24, 0.9);
 $section-title-font-family: 'CODE light';
 $sections-sub-title-font-family: 'CODE bold';
 
+//Text sizes
+$links-and-cta-font-size: clamp(100%, 1.1em, 27px);
 
+//Devices sizes
+$xs-screen: 450px;
+$md-screen: 700px;
+$lg-screen: 1024px;
+
+//Fonts
 @font-face {
   font-family: 'CODE light';
   font-style: normal;

@@ -37,7 +37,9 @@
   }
 }
 .contact-border {
-  margin: 0 350px 0 30px;
+  width: 70%;
+  position: relative;
+  left: 5%;
   padding: 60px 0 50px 0;
   border: 10px solid $main-orange;
 }
