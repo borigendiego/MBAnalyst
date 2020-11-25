@@ -6,10 +6,10 @@ import icono1 from '../imagenes/icono_1.png'
 import icono2 from '../imagenes/icono_2.png'
 import icono3 from '../imagenes/icono_3.png'
 
-const OurServices = (props) => {
+const OurServices = () => {
     return (
         <div className={'ourservices-section'} id={'services'}>
-            <h1 className={'section-subtitle'}>OUR SERVICES</h1>
+            <h2 className={'section-subtitle'}>OUR SERVICES</h2>
             <div className={'container-section'}>
                 <OurServicesItem
                     id={'box1'}

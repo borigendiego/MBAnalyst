@@ -9,7 +9,7 @@ import icono9 from '../assets/icons/icono_9.png'
 import icono10 from '../assets/icons/icono_10.png'
 import ExploreItem from './ExploreItem';
 
-const Explore = (props) => {
+const Explore = () => {
     return (
         <div className={'explore-section-container'}>
             <h1 className={'explore-section-title'}>Why choose a BI solution?</h1>

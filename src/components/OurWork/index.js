@@ -1,15 +1,17 @@
 import React from 'react';
+//Styles
 import './our-work.scss';
+//Constants
 import { DASHBOARDS } from './constants';
 //Component
-import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
+import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import MyIframe from './MyIframe';
 import { Carousel } from 'react-responsive-carousel';
 
-const OurWork = (props) => {
+const OurWork = () => {
     return (
         <div className={'our-work-container'} id={'work'}>
-            <h1 className={'section-subtitle'}>OUR WORK</h1>
+            <h2 className={'section-subtitle'}>OUR WORK</h2>
             <Carousel
                 infiniteLoop={true}
                 showStatus={false}

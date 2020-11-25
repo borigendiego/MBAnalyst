@@ -10,7 +10,6 @@
 
 .your-data-text {
   text-align: justify;
-  font-size: clamp(100%, 1.1em, 18px);
   font-family: Arial, serif;
 }
 
@@ -34,12 +33,12 @@
 
 .your-data-title {
   font-family: $section-title-font-family;
-  font-size: clamp(100%, 6em, 40pt);
+  font-size: clamp(60px, 6em, 100px);
   font-weight: 200;
   text-align: right;
   opacity: 0.3;
   padding-right: 8%;
-  margin: 2rem 0 0 0;
+  margin-top: 2rem;
 }
 
 .your-data-icon {
@@ -116,10 +115,6 @@
 @media (min-width: $md-screen) {
   .your-data-container {
     padding: 0 6% 1%;
-  }
-
-  .your-data-title {
-    font-size: clamp(100%, 6em, 80pt);
   }
 
   .items-wrapper {

@@ -2,18 +2,11 @@
 
 .explore-section-container {
     position: relative;
-    padding: 110px 0 0 0;
-    margin-top: 150px;
+    margin-top: 10%;
 }
 
 .explore-section-title {
-    z-index: 1;
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 0;
     font-family: $sections-sub-title-font-family;
-    font-size: clamp(100%, 3em, 47px);
     padding-left: 5%;
 }
 
@@ -60,7 +53,6 @@
     height: 50%;
     padding: 0 5%;
     font-family: Arial, serif;
-    font-size: clamp(100%, 1.5em, 45px);
     text-align: center;
 }
 
@@ -69,6 +61,7 @@
         height: 60vh;
         flex-direction: row;
     }
+
     .explore-container {
         width: 20%;
 
@@ -91,9 +84,5 @@
 
     .explore-logo {
         width: 90%;
-    }
-
-    .explore-text {
-        font-size: clamp(100%, 1.5em, 16px);
     }
 }

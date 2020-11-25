@@ -1,7 +1,8 @@
 import React from 'react';
+//Styles
 import './contact.scss';
 
-const Contact = (props) => {
+const Contact = () => {
     return(
         <div className={'contact-opacity'}>
             <div className={'contact-section'} id={'contact'}>
