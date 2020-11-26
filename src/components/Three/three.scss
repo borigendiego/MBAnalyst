@@ -61,6 +61,19 @@
     transition: all 0.3s;
 }
 
+@media (max-width: $xs-screen) {
+    .visibleClass {
+        .three-arrow {
+            height: 40px;
+        }
+
+        .three-text {
+            visibility: visible;
+            opacity: 1;
+        }
+    }
+}
+
 @media (min-width: $md-screen) {
     .three-section {
         flex-direction: row;
