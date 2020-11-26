@@ -56,12 +56,8 @@
     height: 60vh;
 
     img, p {
-        opacity: 0.3;
+        opacity: 0.2;
         transition: all 0.3s;
-    }
-
-    &:hover {
-        img, p { opacity: 1; }
     }
 
     div {
@@ -96,6 +92,12 @@
     height: 50%;
 }
 
+@media (max-width: $xs-screen) {
+    .visibleClass {
+        img, p { opacity: 1; }
+    }
+}
+
 @media (min-width: $md-screen) {
     .who-we-are-sections {
         flex-direction: row;
@@ -108,5 +110,9 @@
     .section-with-icon {
         .who-we-are-image-two, .who-we-are-image-one { display: initial }
         div { height: 50% }
+
+        &:hover {
+            img, p { opacity: 1; }
+        }
     }
 }

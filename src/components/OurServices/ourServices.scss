@@ -73,11 +73,42 @@
     font-weight: 700;
     padding-bottom: 20px;
 }
+
 .our-service-item-text {
     font-family: Arial, serif;
     font-size: clamp(20px, 0.4em, 40px);
     margin: 0 5% 5%;
-    line-height: 3rem;
+    line-height: 2.8rem;
+}
+
+@media (max-width: $xs-screen) {
+    .visibleClass {
+        transition: all 1.5ms;
+
+        .our-service-item-image {
+            height: 0;
+            position: relative;
+            top: 3rem;
+            visibility: hidden;
+            opacity: 0;
+        }
+
+        .our-service-item-description-wrapper {
+            visibility: visible;
+            opacity: 1;
+            height: 80%;
+            line-height: 1.5rem;
+            display: flex;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .our-service-item-title {
+            transition: all 0.5s;
+            margin: 3% 0;
+        }
+    }
 }
 
 @media (min-width: $md-screen) {
