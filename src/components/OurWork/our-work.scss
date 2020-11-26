@@ -1,21 +1,13 @@
-@import "../../variables";
+@import '../../variables';
 
-.our-work-title {
-  font-size: 60px;
-}
-
-.our-work-container {
-  height: 100vh;
-  margin-bottom: 300px;
-}
 .our-work-text {
   text-align: center;
-  margin: 40px 60px 40px 60px;
-  font-size: 1.3rem;
+  margin: 10vh 5%;
+  font-size: clamp(30px, 2rem, 50px);
   font-family: Arial, serif;
-  line-height: 1.5rem;
+  line-height: clamp(30px, 2rem, 50px);
 }
 
 .carousel-root, .carousel-slider, .slider-wrapper, .slider {
-  height: 100%;
+  height: 100vh;
 }

@@ -18,7 +18,7 @@ h2 { font-size: clamp(50px, 1.4em, 80px); }
 
 h3 { font-size: clamp(35px, 1.1em, 65px ) }
 
-p {
+p, label {
   font-family: Arial, serif;
   font-size: clamp(16px, 0.6em, 40px) ;
 }

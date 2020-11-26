@@ -23,8 +23,8 @@
 .contact-title-section {
   text-align: right;
   position: relative;
-  bottom: 35px;
-  right: 20px;
+  bottom: 3vh;
+  right: 2%;
   z-index: 2;
 
   .contact-first-title {
@@ -40,60 +40,52 @@
 }
 
 .contact-border {
-  width: 70%;
+  width: 90%;
+  padding: 5% 2%;
   position: relative;
   left: 5%;
-  padding: 60px 0 50px 0;
   border: 10px solid $main-orange;
 }
 
-.contact-form {
-  display: inline;
-  align-content: start;
-  height: 100vh;
+.contact-form { width: 100%; }
+
+.contact-item {
+  text-align: left;
+  padding: 2% 0;
 }
 
 .contact-input {
   border: 1px solid #ccc;
   border-radius: 4px;
   height: 40px;
-  width: 35%;
-  padding-left: 5px;
-}
-
-.contact-input-radio {
-  margin: 5px 7px;
-  width: 20px;
+  width: 100%;
 }
 
 .contact-input-box {
   border: 1px solid #ccc;
   border-radius: 4px;
   height: 80%;
-  width: 35%;
-  padding-left: 5px;
+  width: 100%;
 }
 
 input[type=submit] {
   background-color: #4CAF50;
   color: white;
-  padding: 12px 20px;
+  padding: 3% 10%;
   border: none;
   border-radius: 4px;
   cursor: pointer;
 }
 
-.contact-item {
-  text-align: left;
-  padding: 7px 0 7px 40px;
-}
-
-.contact-label {
-  font-family: Arial, serif;
-  display: block;
-  font-size: 20px;
-}
-
 @media (min-width: $md-screen) {
+  .contact-form { width: 50%; }
 
+  .contact-title-section {
+    bottom: 5vh;
+  }
+
+  .contact-border {
+    width: 70%;
+    padding: 5% 2%;
+  }
 }

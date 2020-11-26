@@ -1,21 +1,22 @@
-@import "../../variables";
+@import '../../variables';
 
 .three-section {
     display: flex;
     background-image: url('../assets/images/section-image.jpeg');
     background-size: 100% 60%;
     background-repeat: no-repeat;
-    margin: 100px 0 0 0;
-    height: 70vh;
+    height: 100vh;
     position: relative;
+    flex-direction: column;
 }
+
 #black-box {
     background-color: rgb(12, 16, 19);
 }
 
 .three-logo {
-    width: 30%;
-    height: 30%;
+    width: 40%;
+    height: 40%;
     background-color: $main-orange;
 }
 
@@ -24,7 +25,6 @@
     visibility: hidden;
     transition: opacity 600ms, visibility 600ms;
     width: 60%;
-    font-family: Arial, serif;
     text-align: center;
 }
 
@@ -33,7 +33,7 @@
     flex-direction: column;
     align-items: center;
     position: relative;
-    top: 30%;
+    width: 100%;
 
     &:hover {
         .three-arrow {
@@ -59,4 +59,22 @@
     background: $main-orange;
     clip-path: polygon(100% 0, 0 0, 50% 100%);
     transition: all 0.3s;
+}
+
+@media (min-width: $md-screen) {
+    .three-section {
+        flex-direction: row;
+        height: 70vh;
+        margin-top: 10%;
+    }
+
+    .three-logo-container {
+        top: 30%;
+        width: calc(100% / 3);
+    }
+
+    .three-logo {
+        width: 30%;
+        height: 30%;
+    }
 }
