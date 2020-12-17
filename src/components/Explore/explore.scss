@@ -7,7 +7,8 @@
 
 .explore-section-title {
     font-family: $sections-sub-title-font-family;
-    padding-left: 5%;
+    padding: 0 2%;
+    margin: 12% 0;
 }
 
 .explore-section {
@@ -19,8 +20,7 @@
 }
 
 .explore-container {
-    width: 100%;
-    height: 100%;
+    height: 40vh;
     display: flex;
     flex-direction: column;
     padding: 2%;
@@ -30,14 +30,10 @@
 }
 
 .explore-container:nth-child(even) {
-    .hexagon {
-        background-color: rgba(243, 159, 24, 0.8);
-    }
+    .hexagon { background-color: rgba(243, 159, 24, 0.8); }
 }
 
-.explore-logo {
-    width: 60%;
-}
+.explore-logo { width: 60%; }
 
 .hexagon {
     clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
@@ -52,8 +48,23 @@
 .explore-text {
     height: 50%;
     padding: 0 5%;
-    font-family: Arial, serif;
     text-align: center;
+}
+
+@media (max-width: $xs-screen) {
+    .explore-container {
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        padding: 5% 0;
+    }
+
+    .explore-container.visibleClass {
+        transition: all 1.5ms;
+        background-color: rgba(243, 159, 24, 0.7);
+        height: 60vh;
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+    }
 }
 
 @media (min-width: $md-screen) {
@@ -64,11 +75,17 @@
 
     .explore-container {
         width: 20%;
+        height: 60vh;
 
         &:hover {
             background-color: rgba(243, 159, 24, 0.7);
             width: 23%;
         }
+    }
+
+    .explore-section-title {
+        padding-left: 5%;
+        margin: 3% 0;
     }
     /*This is the way to select all the siblings but not the hover one*/
     .explore-section:hover > .explore-container:not(:hover){

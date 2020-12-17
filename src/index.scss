@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
@@ -17,11 +19,26 @@ h1,h2,h3,h4,p { margin: 0; }
 
 h1 { font-size: clamp(55px, 2.4em, 100px); }
 
-h2 { font-size: clamp(50px, 1.4em, 80px); }
+h2 {
+  font-size: clamp(50px, 1.4em, 80px);
+  font-family: $sections-sub-title-font-family;
+}
 
 h3 { font-size: clamp(35px, 1.1em, 65px ) }
 
 p, label {
   font-family: Arial, serif;
-  font-size: clamp(16px, 0.6em, 40px) ;
+  font-size: clamp(20px, 0.6em, 40px) ;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: clamp(50px, 1.6em, 80px);
+  margin: 3% 0;
+}
+
+@media (max-width: $xs-screen) {
+  .section-subtitle {
+    margin: 12% 0;
+  }
 }
