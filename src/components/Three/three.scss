@@ -5,7 +5,6 @@
     background-image: url('../assets/images/section-image.jpeg');
     background-size: 100% 60%;
     background-repeat: no-repeat;
-    height: 100vh;
     position: relative;
     flex-direction: column;
 }
@@ -62,6 +61,10 @@
 }
 
 @media (max-width: $xs-screen) {
+    .three-logo-container {
+        height: 65vh;
+    }
+
     .visibleClass {
         .three-arrow {
             height: 40px;
