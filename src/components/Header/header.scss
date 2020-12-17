@@ -1,25 +1,32 @@
-.header {
+@import '../../variables';
+
+.header-wrapper {
   display: flex;
   justify-content: flex-end;
-  background-color: rgba(12, 16, 19, 0.9);
-  padding-top: 20px;
+  top: 5vh;
   position: fixed;
-  padding-bottom: 20px;
   width: 100%;
-  margin-top: 20px;
-  z-index: 100;
+  background-color: rgba(12,16,19,.9);
+  z-index: 9999;
 }
 
-a {
-  width: 50px;
-  color: #ffffff;
-  font-family: Arial, serif;
-  padding: 25px;
-  margin-right: 25px;
-  font-size: large;
-  text-decoration: none;
+.nav-menu {
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  font-size: clamp(20px, 0.5em, 30px);
+  padding: 0 3%;
+
+  a {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: $sections-sub-title-font-family;
+    li {
+      list-style-type: none;
+    }
+  }
 }
 
-html {
-  scroll-behavior: smooth;
+@media (max-width: $xs-screen) {
+  #large-screen-menu { display: none; }
 }

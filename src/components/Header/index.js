@@ -1,14 +1,22 @@
 import React from 'react';
-import '../Header/header.scss'
+//Styles
+import '../Header/header.scss';
+//Constants
+import { MENU_LINKS } from './constants';
+//Components
+import MobileMenu from './mobile-menu';
 
-const Header = (props) => {
+const Header = () => {
+
     return (
-        <div className='header'>
-            <nav className={'header-item'}><a href={'#home'}>Home</a></nav>
-            <nav className={'header-item'}><a href={'#services'}>Services</a></nav>
-            <nav className={'header-item'}><a href={'#work'}>Work</a></nav>
-            <nav className={'header-item'}><a href={'#contact'}>Contact</a></nav>
-        </div>
+        <nav role={'navigation'} className={'header-wrapper'}>
+            <ul id={'large-screen-menu'} className={'nav-menu'}>
+                {
+                    MENU_LINKS.map((link,index) => <a key={index} href={link.linkTo}><li>{link.label}</li></a>)
+                }
+            </ul>
+            <MobileMenu menuItems={MENU_LINKS} />
+        </nav>
     )
 };
 

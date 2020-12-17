@@ -8,7 +8,10 @@ body {
   box-sizing: border-box;
 }
 
-html { font-size: 2vw }
+html {
+  font-size: 2vw;
+  scroll-behavior: smooth;
+}
 
 h1,h2,h3,h4,p { margin: 0; }
 
