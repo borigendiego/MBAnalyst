@@ -5,7 +5,7 @@ import Icono1 from '../assets/icons/icono_14.png'
 import Icono2 from '../assets/icons/icono_15.png'
 import Icono3 from '../assets/icons/icono_16.png'
 
-const Three = (props) => {
+const Three = () => {
     return(
         <div className={'three-section'}>
             <ThreeItem
@@ -22,7 +22,7 @@ const Three = (props) => {
             <ThreeItem
                 image={Icono3}
                 text={'Visualise overall Supply performance chain through updated data directly connected' +
-                'to your inventory management systems'}
+                ' to your inventory management systems'}
             />
         </div>
     )

@@ -1,6 +1,7 @@
 @import '../../variables';
 
 .our-work-text {
+  display: none;
   text-align: center;
   margin: 10vh 5%;
   font-size: clamp(30px, 2rem, 50px);

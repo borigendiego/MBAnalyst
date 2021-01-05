@@ -14,7 +14,7 @@ const OurServices = () => {
                 <OurServicesItem
                     id={'box1'}
                     image={icono1}
-                    title={'Power BI Cosulting'}
+                    title={'Power BI Consulting'}
                     text={'We work with Power BI to create powerful automated reports' +
                     ' to visualise your business data, capture key insights in real time and improve decision making. ' +
                     'As a best-in-class BI platform, Power BI allows you to connect to data stored in multiple sources' +
