@@ -8,6 +8,7 @@
   width: 100%;
   background-color: rgba(12,16,19,.9);
   z-index: 9999;
+  transition: 600ms;
 }
 
 .nav-menu {
@@ -29,4 +30,10 @@
 
 @media (max-width: $xs-screen) {
   #large-screen-menu { display: none; }
+}
+
+@media (min-width: $md-screen) {
+  .sticky.header-wrapper {
+    top: 0;
+  }
 }

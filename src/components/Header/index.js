@@ -16,6 +16,16 @@ const Header = () => {
                 }
             </ul>
             <MobileMenu menuItems={MENU_LINKS} />
+
+            <script type={'text/javascript'}>
+                {
+                    window.addEventListener('scroll', function() {
+                        let header = document.querySelector('nav');
+
+                        header.classList.toggle("sticky", window.scrollY > 0);
+                    })
+                }
+            </script>
         </nav>
     )
 };
