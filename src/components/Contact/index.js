@@ -1,8 +1,21 @@
 import React from 'react';
+import emailjs from 'emailjs-com';
 //Styles
 import './contact.scss';
 
 const Contact = () => {
+    console.log('>>process.env', process.env);
+    const onSubmit = (e) => {
+        e.preventDefault();
+
+        emailjs.sendForm('service_tx6tcno', 'template_uwk801r', e.target, 'user_zIp5WFXMeXJDWwUBtUVPw')
+            .then((result) => {
+                console.log(result.text);
+            }, (error) => {
+                console.log(error.text);
+            }); 
+    };
+
     return(
         <div className={'contact-section'} id={'contact'}>
             <div className={'contact-title-section'}>
@@ -10,7 +23,7 @@ const Contact = () => {
                 <h1 className={'contact-second-title'}>AND GET MY QUOTE</h1>
             </div>
             <div className={'contact-border'}>
-                <form className={'contact-form'}>
+                <form className={'contact-form'} onSubmit={onSubmit}>
                     <section className={'contact-item'}>
                         <label className={'contact-label'}>Name (required)</label>
                         <input type={'text'} name={'name'} id={'name'} className={'contact-input'}/>
