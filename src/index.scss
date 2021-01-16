@@ -37,6 +37,10 @@ p, label {
   margin: 3% 0;
 }
 
+#services, #work, #contact {
+  scroll-margin-top: 60px;
+}
+
 @media (max-width: $xs-screen) {
   .section-subtitle {
     margin: 12% 0;
