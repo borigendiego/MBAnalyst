@@ -2,8 +2,8 @@
 
 .three-section {
     display: flex;
-    background-image: url('../assets/images/section-image.jpeg');
-    background-size: 100% 60%;
+    background-image: url('../assets/images/work-img.jpg');
+    background-size: 100% 100%;
     background-repeat: no-repeat;
     position: relative;
     flex-direction: column;
@@ -19,11 +19,16 @@
     background-color: $main-orange;
 }
 
-.three-text {
-    opacity: 0;
+.three-text-container {
     visibility: hidden;
-    transition: opacity 600ms, visibility 600ms;
-    width: 60%;
+    transition: opacity 200ms, visibility 200ms;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.52);
+    padding: 5%;
+    border-radius: 5px;
+}
+
+.three-text {
     text-align: center;
 }
 
@@ -39,7 +44,7 @@
             height: 40px;
         }
 
-        .three-text {
+        .three-text-container {
             visibility: visible;
             opacity: 1;
         }
@@ -70,7 +75,7 @@
             height: 40px;
         }
 
-        .three-text {
+        .three-text-container {
             visibility: visible;
             opacity: 1;
         }

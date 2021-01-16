@@ -24,17 +24,22 @@ h2 {
   font-family: $sections-sub-title-font-family;
 }
 
-h3 { font-size: clamp(35px, 1.1em, 65px ) }
+h3 { font-size: clamp(30px, 0.9em, 40px ) }
 
 p, label {
   font-family: Arial, serif;
-  font-size: clamp(20px, 0.4em, 40px);
+  font-size: clamp(17px, 0.3em, 22px);
+}
+
+.simple-section-wrapper {
+  padding: 0 10%;
+  margin: 5% 0;
 }
 
 .section-subtitle {
   text-align: center;
   font-size: clamp(50px, 1.6em, 80px);
-  margin: 3% 0;
+  margin-bottom: 4%;
 }
 
 #services, #work, #contact {

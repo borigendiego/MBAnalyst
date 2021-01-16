@@ -1,7 +1,6 @@
 @import '../../variables';
 
 .who-we-are-sections {
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
 }
@@ -78,8 +77,6 @@
 }
 
 .who-we-are-section-paragraph {
-    font-size: clamp(18px,0.6rem, 30px);
-    font-family: Arial, serif;
     text-align: left;
     margin:  0 20px 40px 50px;
     padding: 0 10px;
@@ -100,6 +97,7 @@
 @media (min-width: $md-screen) {
     .who-we-are-sections {
         flex-direction: row;
+        padding-top: 5%;
     }
     .who-we-are-section {
         height: 80vh;

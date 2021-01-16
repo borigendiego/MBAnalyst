@@ -8,7 +8,7 @@ import icono3 from '../imagenes/icono_3.png'
 
 const OurServices = () => {
     return (
-        <div className={'ourservices-section'} id={'services'}>
+        <div className={'simple-section-wrapper'} id={'services'}>
             <h2 className={'section-subtitle'}>OUR SERVICES</h2>
             <div className={'container-section'}>
                 <OurServicesItem

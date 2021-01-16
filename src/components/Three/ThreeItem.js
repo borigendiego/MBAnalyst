@@ -10,7 +10,9 @@ const ThreeItem = (props) => {
             <div className={`${isElementVisible ? 'three-logo-container visibleClass' : 'three-logo-container'}`}>
                 <img alt={'logo'} src={props.image} className={'three-logo'} id={props.id}/>
                 <div className={'three-arrow'} id={props.id} />
-                <p className={'three-text'}>{props.text}</p>
+                <div className={'three-text-container'}>
+                    <p className={'three-text'}>{props.text}</p>
+                </div>
             </div>
         </VisibilitySensor>
     )
