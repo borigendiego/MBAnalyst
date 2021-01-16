@@ -31,17 +31,16 @@ const Contact = () => {
 
     const onSubmit = (e, form) => {
         const { values } = e;
-        const formErrors = {};
 
         if (!values.name) {
-            formErrors['name'] = 'Required';
+            setErrors({...errors, 'name': 'Required'});
         }
 
         if (!values.mail) {
-            formErrors['mail'] = 'Required';
+            setErrors({...errors, 'mail': 'Required'});
         }
 
-        if (Object.keys(formErrors).length === 0 && formErrors.constructor === Object) {
+        if (!errors && (Object.keys(errors).length === 0 && errors.constructor === Object)) {
             //TODO: Move emails sender to a proper API
             emailjs.sendForm(process.env.REACT_APP_MAIL_VALUE, process.env.REACT_APP_TEMPLATE_ID, form, process.env.REACT_APP_USER_ID)
                 .then(() => {
@@ -51,8 +50,6 @@ const Contact = () => {
                     console.log(error.text);
                     setMessageSent('error');
                 });
-        } else {
-            setErrors(formErrors);
         }
     };
 
