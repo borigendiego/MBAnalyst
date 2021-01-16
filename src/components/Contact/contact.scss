@@ -1,7 +1,7 @@
 @import '../../variables.scss';
 
 .contact-section {
-  margin-top: 10%;
+  margin-top: 20%;
   position: relative;
   z-index: 1;
 }
@@ -122,6 +122,8 @@ button[type=submit]:hover {
 }
 
 @media (min-width: $md-screen) {
+  .contact-section { margin-top: 10% }
+
   .contact-form { width: 50%; }
 
   .contact-title-section {
