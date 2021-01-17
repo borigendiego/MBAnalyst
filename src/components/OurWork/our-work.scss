@@ -9,6 +9,32 @@
   line-height: clamp(30px, 2rem, 50px);
 }
 
+/*Carousel overwrite styles*/
 .carousel-root, .carousel-slider, .slider-wrapper, .slider {
   height: 100vh;
+}
+
+.control-arrow {
+  padding: 0 !important;
+  width: 3% !important;
+}
+
+.carousel.carousel-slider .control-arrow {
+  opacity: 1;
+}
+.carousel .control-prev.control-arrow:before {
+  border-right: 20px solid $black-color !important;
+}
+
+.carousel .control-next.control-arrow:before {
+  border-left: 20px solid $black-color !important;
+}
+
+.carousel .control-arrow:before, .carousel.carousel-slider .control-arrow:before {
+  border-top: 20px solid transparent !important;
+  border-bottom: 20px solid transparent !important;
+}
+
+.carousel .slide {
+  background-color: $white-color !important;
 }
