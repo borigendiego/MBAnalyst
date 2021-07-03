@@ -48,11 +48,13 @@
   border: 10px solid $main-orange;
 }
 
-.contact-form { width: 100%; }
+.custom-form-class {
+  width: 100%;
 
-.contact-item {
-  text-align: left;
-  padding: 2% 0;
+  .item {
+    text-align: left;
+    padding: 2% 0;
+  }
 }
 
 .contact-input {
@@ -81,7 +83,7 @@
   color: $red-errors;
 }
 
-button[type=submit] {
+input[type=submit] {
   background-color: $main-orange;
   color: $white-color;
   padding: 3% 10%;
@@ -90,45 +92,17 @@ button[type=submit] {
   transition: 300ms;
 }
 
-button[type=submit]:hover {
+input[type=submit]:hover {
   background-color: $white-color;
   color: $main-orange;
   border: 2px solid $main-orange;
 }
 
-.message {
-  min-height: 3em;
-  border: 1px solid;
-  border-radius: 2px;
-  padding: 2%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
-  h2 { font-size: clamp(24px, 0.2em, 30px); }
-  p { font-size: clamp(16px, 0.2em, 24px); }
-}
-
-.message.error {
-  background-color: #cc001712;
-  color: $red-errors;
-  border: 2px solid $red-errors;
-}
-
-.message.succeed {
-  background-color: #1ec61e40;
-  color: $green-succeed;
-  border: 2px solid $green-succeed;
-}
-
 @media (min-width: $md-screen) {
+  .custom-form-class { width: 65%; }
   .contact-section { margin-top: 10% }
-
   .contact-form { width: 50%; }
-
-  .contact-title-section {
-    bottom: 5vh;
-  }
+  .contact-title-section { bottom: 5vh; }
 
   .contact-border {
     width: 70%;
