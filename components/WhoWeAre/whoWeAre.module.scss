@@ -1,0 +1,116 @@
+@import '../../css/variables';
+
+.container {
+    display: flex;
+    flex-direction: row;
+    padding-top: 15%;
+}
+
+.section {
+    width: 100%;
+    display: flex;
+    height: 50vh;
+    flex-direction: column;
+    background-color: #000000;
+
+    h1 {
+        position: relative;
+        bottom: 6%;
+        width: 100%;
+        text-align: center;
+        font-family: $sections-sub-title-font-family;
+        margin: 0;
+    }
+}
+.first_overlay {
+    height: 100%;
+    width: 100%;
+    background-image: url('/assets/images/image2.jpg');
+    background-size: cover;
+    background-position: 70% 20%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+.first_section {
+    text-align: left;
+    box-sizing: border-box;
+    background-color: rgba(243, 159, 24, 0.5);
+    position: relative;
+}
+
+.text {
+    padding: 0 50px;
+    margin-top: 30px;
+    text-align: justify;
+    line-height: 150%;
+    letter-spacing: 1px;
+}
+.text_s {
+    letter-spacing: 2px;
+}
+
+.section_icon {
+    height: 60vh;
+
+    img, p {
+        opacity: 0.2;
+        transition: all 0.3s;
+    }
+
+    div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+
+    .image_two, .image_one { display: none }
+}
+
+.logo_one, .logo_two { width: 40%; }
+
+.image_one, .image_two {
+    width: 100%;
+    height: 50%;
+}
+
+.paragraph {
+    text-align: left;
+    margin:  0 20px 40px 50px;
+    padding: 0 10px;
+}
+
+.section_logo {
+    color: #ffffff;
+    background-color: rgb(12, 16, 19);
+    height: 50%;
+}
+
+@media (max-width: $xs-screen) {
+    .visibleClass {
+        img, p { opacity: 1; }
+    }
+}
+
+@media (min-width: $md-screen) {
+    .container {
+        flex-direction: row;
+        padding-top: 5%;
+    }
+    .section {
+        height: 80vh;
+        width: calc(100% / 3);
+    }
+
+    .section_icon {
+        .image_two, .image_one { display: initial }
+        div { height: 50% }
+
+        &:hover {
+            img, p { opacity: 1; }
+        }
+    }
+}

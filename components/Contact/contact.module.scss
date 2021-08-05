@@ -1,0 +1,96 @@
+@import '../../css/variables';
+
+.container {
+  margin-top: 20%;
+  position: relative;
+  z-index: 1;
+}
+
+.container::after {
+  background-image:
+          linear-gradient(to left, rgba(245, 246, 252, 0.01), rgba(255, 253, 253, 0.75)),
+          url('/assets/images/image7.jpg');
+  background-size: cover;
+  content: "";
+  opacity: 0.5;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  z-index: -1;
+}
+
+.title {
+  text-align: right;
+  position: relative;
+  bottom: 3vh;
+  right: 2%;
+  z-index: 2;
+
+  .first_title {
+    font-size: clamp(50px, 5vw, 80px);
+    font-family: $sections-sub-title-font-family;
+    margin-bottom: 10px;
+  }
+  .second_title {
+    margin-top: 0;
+    font-family: $section-title-font-family;
+    font-size: clamp(50px, 5vw, 60px);
+  }
+}
+
+.border {
+  width: 70%;
+  padding: 5% 2%;
+  position: relative;
+  left: 5%;
+  border: 10px solid $main-orange;
+}
+
+.custom-form-class {
+  width: 100%;
+
+  .item {
+    text-align: left;
+    padding: 2% 0;
+  }
+}
+
+.input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  transition: 300ms;
+}
+
+.input.error {
+  border: 3px solid $red-errors;
+  background-color: #cc001712;
+  font-weight: 600;
+}
+
+.input_box {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  height: 80%;
+  width: 100%;
+}
+
+.error_message {
+  font-size: clamp(16px, 0.2em, 22px);
+  color: $red-errors;
+}
+
+@media (min-width: $md-screen) {
+  .custom-form-class { width: 65%; }
+  .section { margin-top: 10% }
+  .form { width: 50%; }
+  .title { bottom: 5vh; }
+
+  .contact-border {
+    width: 70%;
+    padding: 5% 2%;
+  }
+}

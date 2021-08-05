@@ -1,0 +1,104 @@
+@import '../../css/variables';
+
+.container {
+    position: relative;
+    margin-top: 10%;
+}
+
+.title {
+    font-family: $sections-sub-title-font-family;
+    padding: 0 2%;
+    margin: 12% 0;
+}
+
+.content {
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    flex-direction: column;
+    z-index: 2;
+}
+
+.item {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+    box-sizing: border-box;
+    transition: all 300ms;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    .hexagon { background-color: rgba(243, 159, 24, 0.8); }
+}
+
+.logo { width: 60%; }
+
+.hexagon {
+    clip-path: polygon(25% 0%, 75% 0%, 100% 50%, 75% 100%, 25% 100%, 0% 50%);
+    background-color: rgba(12, 16, 19, 0.9);
+    margin-bottom: 15%;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text {
+    padding: 0 5%;
+    text-align: center;
+}
+
+@media (max-width: $xs-screen) {
+    .item {
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+        padding: 5% 0;
+        justify-content: center;
+    }
+
+    .item.visibleClass {
+        transition: all 300ms;
+        background-color: rgba(243, 159, 24, 0.7);
+        filter: blur(0px);
+        -webkit-filter: blur(0px);
+    }
+}
+
+@media (min-width: $md-screen) {
+    .content {
+        height: 60vh;
+        flex-direction: row;
+    }
+
+    .item {
+        width: 20%;
+        height: 60vh;
+
+        &:hover {
+            background-color: rgba(243, 159, 24, 0.7);
+            width: 23%;
+        }
+    }
+
+    .title {
+        padding-left: 5%;
+        margin: 3% 0;
+    }
+    /*This is the way to select all the siblings but not the hover one*/
+    .section:hover > .item:not(:hover){
+        filter: blur(8px);
+        -webkit-filter: blur(8px);
+    }
+
+    .hexagon {
+        height: 50%;
+        padding: 20%;
+        width: 100%;
+    }
+
+    .logo {
+        width: 90%;
+    }
+}

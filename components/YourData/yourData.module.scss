@@ -1,0 +1,196 @@
+@import '../../css/variables';
+
+.container {
+  margin-bottom: 15%;
+}
+
+.content {
+  display: flex;
+  padding: 0 2%;
+}
+
+.items_wrapper { width: 100%; }
+
+.text {
+  text-align: justify;
+  font-family: Arial, serif;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 40vh;
+  position: relative;
+  transition: all 0.3s;
+
+  img {
+    width: 25rem;
+    height: 25rem;
+  }
+
+  p {
+    padding: 0 3%;
+    text-align: left;
+  }
+}
+
+.title {
+  font-family: $sections-sub-title-font-family;
+  text-align: right;
+  margin-top: 2rem;
+  margin-bottom: 6rem;
+  padding: 0 3%;
+}
+
+.icon {
+  width: 60%;
+}
+.image {
+  height: 100%;
+  width: 100%;
+}
+
+.rhombus_container {
+  display: none;
+}
+
+.rhombus {
+  width: 45%;
+  height: 45%;
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: all 0.3s;
+
+  //Good way to apply style to siblings
+  /*~ .third {
+      width: 45%;
+      height: 45%;
+    }*/
+}
+
+.left {
+  top: 0;
+  bottom: 0;
+  background-color: rgba(12, 16, 19, 0.9);
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.top {
+  right: 0;
+  left: 0;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(243, 159, 24);
+
+}
+
+.right {
+  top: 0;
+  bottom: 0;
+  right: -30%;
+  margin-top: auto;
+  margin-bottom: auto;
+  width: 75%;
+  height: 75%;
+}
+
+.bottom {
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: rgb(243, 159, 24);
+}
+
+.rhombus_hover {
+  width: 55%;
+  height: 55%;
+}
+
+.hover_element {
+  transition: all 0.3s;
+  background-color: #c8c8c8;
+  left: 12%;
+  height: 40%;
+
+  p { font-weight: 600; }
+
+  img {
+    width: 25%;
+  }
+}
+
+@media (min-width: $md-screen) {
+  .container {
+    height: 60vh;
+    padding: 0 6% 1%;
+  }
+
+  .title {
+    margin-bottom: 3%;
+    padding-right: 8%;
+  }
+
+  .items_wrapper {
+    width: 50%;
+    padding: 2% 7% 2% 2%;
+  }
+
+  .rhombus_container {
+    display: initial;
+    position: relative;
+    width: 35%;
+  }
+
+  .item {
+    height: calc(100%/3);
+    padding: 2% 9%;
+    flex-direction: row;
+
+    img {
+      width: 3em;
+      height: 3em;
+    }
+  }
+
+  .left {
+    &:hover {
+      width: 55%;
+      height: 55%;
+    }
+  }
+
+  .top {
+    &:hover {
+      width: 55%;
+      height: 55%;
+    }
+  }
+
+  .bottom {
+    &:hover {
+      width: 55%;
+      height: 55%;
+    }
+  }
+
+  .hover_element {
+    transition: all 0.3s;
+    background-color: #c8c8c8;
+    left: 12%;
+    height: 40%;
+
+    p { font-weight: 600; }
+
+    img {
+      width: 25%;
+    }
+  }
+}
