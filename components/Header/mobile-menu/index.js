@@ -11,7 +11,7 @@ const MobileMenu = (props) => {
             <span />
             <span />
             <span />
-            <ul id={'menu'}>
+            <ul id={'menu'} className={style.menu}>
                 {
                     menuItems.map((link,index) => <a key={index} href={link.linkTo}><li>{link.label}</li></a>)
                 }

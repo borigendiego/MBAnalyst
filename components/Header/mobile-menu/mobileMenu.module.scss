@@ -107,7 +107,7 @@
     transform: rotate(-45deg) translate(-1px, -1px);
   }
 
-  #menu
+  .menu
   {
     position: absolute;
     width: 0;
@@ -121,11 +121,11 @@
     transition: all 500ms cubic-bezier(0.77,0.2,0.05,1.0);
   }
 
-  #menu li
+  .menu li
   {
     padding: 5% 0;
     font-size: clamp(100%, 5vw, 24px);
-    //font-family: $title-font-family;
+    font-family: $sections-sub-title-font-family;
     visibility: hidden;
     transition: all 150ms;
   }
@@ -133,7 +133,7 @@
   /*
    * Make slide came from right
    */
-  .menuToggle input:checked ~ #menu
+  .menuToggle input:checked ~ .menu
   {
     width: 80vw;
     height: 50vh;

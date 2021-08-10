@@ -93,6 +93,10 @@
     .visibleClass {
         img, p { opacity: 1; }
     }
+
+    .container {
+        flex-direction: column;
+    }
 }
 
 @media (min-width: $md-screen) {

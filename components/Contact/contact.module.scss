@@ -94,3 +94,9 @@
     padding: 5% 2%;
   }
 }
+
+@media (max-width: $xs-screen) {
+  .border {
+    width: 90%;
+  }
+}

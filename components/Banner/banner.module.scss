@@ -46,14 +46,14 @@
 }
 
 @media (max-width: $xs-screen) {
-    .banner {
+    .container {
         img {
             height: 45%;
             width: 100vw;
         }
     }
 
-    .banner-content {
+    .content {
         justify-content: center;
         align-content: center;
         align-items: center;
