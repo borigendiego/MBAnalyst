@@ -51,11 +51,14 @@
 }
 
 @media (max-width: $xs-screen) {
+    //.item {
+    //    filter: blur(8px);
+    //    -webkit-filter: blur(8px);
+    //    padding: 5% 0;
+    //    justify-content: center;
+    //}
     .item {
-        filter: blur(8px);
-        -webkit-filter: blur(8px);
-        padding: 5% 0;
-        justify-content: center;
+        height: 55vh;
     }
 
     .item.visibleClass {

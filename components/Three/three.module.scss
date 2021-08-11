@@ -63,11 +63,14 @@
 }
 
 @media (max-width: $xs-screen) {
-    .logo_container {
-        height: 65vh;
+
+    .section {
+        background-size: cover;
     }
 
-    .visibleClass {
+    .logo_container {
+        height: 65vh;
+
         .three-arrow {
             height: 40px;
         }
@@ -75,6 +78,10 @@
         .text_container {
             visibility: visible;
             opacity: 1;
+        }
+
+        .arrow {
+            height: 40px;
         }
     }
 }

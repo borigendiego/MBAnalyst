@@ -79,10 +79,6 @@
 @media (max-width: $xs-screen) {
     .item {
         height: 70vh;
-    }
-
-    .visibleClass {
-        transition: all 1.5ms;
 
         .item_image {
             height: 0;
@@ -95,17 +91,16 @@
         .item_description {
             visibility: visible;
             opacity: 1;
-            height: 80%;
+            height: 60%;
             line-height: 1.5rem;
             display: flex;
-            align-content: center;
-            justify-content: center;
-            align-items: center;
+            padding-top: 5%;
         }
 
         .item_title {
             transition: all 0.5s;
-            margin: 3% 0;
+            margin: 20% 10% 10% 10%;
+            font-size: 7rem;
         }
     }
 }

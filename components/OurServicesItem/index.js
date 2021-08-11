@@ -10,7 +10,7 @@ const OurServicesItem = ({servicesData}) => {
 
     return (
         <VisibilitySensor onChange={onChangeVisibility}>
-            <div id={id} className={`${isElementVisible ? `${styles.item} visibleClass` : `${styles.item}`}`}>
+            <div id={id} className={`${styles.item} visibleClass`}>
                 <div className={styles.item_image} style={{backgroundImage:`url(${image})`}}/>
                 <h3 className={styles.item_title}>{title}</h3>
                 <div className={styles.item_description}>
