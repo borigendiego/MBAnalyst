@@ -4,14 +4,13 @@
     display: flex;
     background-image: url('/assets/images/work-img.jpg');
     background-size: 100% 135%;
-    background-position: 0 40%;
     background-repeat: no-repeat;
     position: relative;
     flex-direction: column;
 }
 
 .black_box {
-    .arrow , .logo {
+    .logo, .arrow {
         background-color: rgb(12, 16, 19);
     }
 }
@@ -23,15 +22,13 @@
 }
 
 .text_container {
+    opacity: 0;
     visibility: hidden;
-    transition: opacity 200ms, visibility 200ms;
+    transition: opacity 600ms, visibility 600ms;
     width: 70%;
-    background-color: rgba(255, 255, 255, 0.7);
+    background-color: hsla(0,0%,100%,.7);
     padding: 5%;
     border-radius: 5px;
-}
-
-.text {
     text-align: center;
 }
 
@@ -54,6 +51,12 @@
     }
 }
 
+//.logo_container:nth-child(even) {
+//    .logo {
+//        background-color: red;
+//    }
+//}
+
 .arrow {
     width: 20%;
     height: 0;
@@ -63,25 +66,16 @@
 }
 
 @media (max-width: $xs-screen) {
-
-    .section {
-        background-size: cover;
-    }
-
     .logo_container {
         height: 65vh;
 
-        .three-arrow {
-            height: 40px;
-        }
-
-        .text_container {
-            visibility: visible;
-            opacity: 1;
-        }
-
         .arrow {
             height: 40px;
+        }
+
+        .text {
+            visibility: visible;
+            opacity: 1;
         }
     }
 }

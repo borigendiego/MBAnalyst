@@ -1,6 +1,6 @@
-import icon1 from '../../src/components/assets/icons/icono_14.png';
-import icon2 from '../../src/components/assets/icons/icono_15.png';
-import icon3 from '../../src/components/assets/icons/icono_16.png';
+import icon1 from '../../public/assets/icons/icono_14.png';
+import icon2 from '../../public/assets/icons/icono_15.png';
+import icon3 from '../../public/assets/icons/icono_16.png';
 
 const THREE_DATA = [
     {
