@@ -1,5 +1,14 @@
 @import '../../css/variables';
 
+.overlay {
+    z-index: -1;
+    background-color: #282c34;
+    opacity: .5;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
 .section {
     display: flex;
     background-image: url('/assets/images/work-img.jpg');
@@ -7,6 +16,7 @@
     background-repeat: no-repeat;
     position: relative;
     flex-direction: column;
+    z-index: 1;
 }
 
 .black_box {

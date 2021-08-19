@@ -7,6 +7,7 @@ import { THREE_DATA } from './constants';
 const Three = () => {
     return(
         <div className={styles.section}>
+            <div className={styles.overlay}/>
             {THREE_DATA.map((value, index) => <ThreeItem  threeData={value} key={value.text}/>)}
         </div>
     )
