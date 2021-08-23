@@ -76,6 +76,11 @@
 }
 
 @media (max-width: $xs-screen) {
+
+    .section {
+        background-size: initial;
+    }
+
     .logo_container {
         height: 65vh;
 
@@ -83,7 +88,7 @@
             height: 40px;
         }
 
-        .text {
+        .text_container {
             visibility: visible;
             opacity: 1;
         }
