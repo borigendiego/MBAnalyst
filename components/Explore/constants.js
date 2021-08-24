@@ -1,8 +1,8 @@
-import icon6 from '../../public/assets/icons/icono_6.png';
-import icon7 from '../../public/assets/icons/icono7.png';
-import icon8 from '../../public/assets/icons/icono_8.png';
-import icon9 from '../../public/assets/icons/icono_9.png';
-import icon10 from '../../public/assets/icons/icono_10.png';
+import icon6 from '../../public/assets/icons/icono_6.png?webp';
+import icon7 from '../../public/assets/icons/icono7.png?webp';
+import icon8 from '../../public/assets/icons/icono_8.png?webp';
+import icon9 from '../../public/assets/icons/icono_9.png?webp';
+import icon10 from '../../public/assets/icons/icono_10.png?webp';
 
 const EXPLORE_DATA = [
     {

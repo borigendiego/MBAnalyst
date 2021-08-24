@@ -24,7 +24,9 @@ const Header = () => {
         <nav role={'navigation'} className={`${styles.container} header-wrapper` }>
             <ul id={'large-screen-menu'} className={styles.menu}>
                 {
-                    MENU_LINKS.map((link,index) => <a key={index} href={link.linkTo}><li>{link.label}</li></a>)
+                    MENU_LINKS.map((link,index) =>
+                        <a key={index} href={link.linkTo}><li>{link.label}</li></a>
+                    )
                 }
             </ul>
             <MobileMenu menuItems={MENU_LINKS} />

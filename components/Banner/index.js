@@ -2,7 +2,7 @@ import React from 'react';
 //Style
 import styles from './banner.module.scss';
 //Image
-import Logo from '../../public/assets/images/Transparent-logo.png'
+import Logo from '../../public/assets/images/Transparent-logo.png?webp'
 
 const Banner = () => {
     return(

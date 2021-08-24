@@ -1,6 +1,6 @@
-import icon1 from '../imagenes/icono_1.png';
-import icon2 from '../imagenes/icono_2.png';
-import icon3 from '../imagenes/icono_3.png';
+import icon1 from '../imagenes/icono_1.png?webp';
+import icon2 from '../imagenes/icono_2.png?webp';
+import icon3 from '../imagenes/icono_3.png?webp';
 
 const SERVICES_DATA = [
     {

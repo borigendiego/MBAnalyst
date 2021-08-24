@@ -1,6 +1,5 @@
 import React from 'react';
 import styles from './ourServices.module.scss';
-import '../imagenes/logo.svg';
 import OurServicesItem from '../OurServicesItem';
 import { SERVICES_DATA } from "./constants";
 

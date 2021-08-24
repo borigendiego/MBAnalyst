@@ -3,7 +3,6 @@ import ThreeItem from './threeItem/ThreeItem';
 import styles from './three.module.scss';
 import { THREE_DATA } from './constants';
 
-
 const Three = () => {
     return(
         <div className={styles.section}>

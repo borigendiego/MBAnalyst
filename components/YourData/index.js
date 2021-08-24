@@ -2,13 +2,13 @@ import React, { useState } from 'react';
 //css
 import styles from './yourData.module.scss';
 //Images
-import FirstIconWhite from '../../public/assets/icons/icono_11_dif.png';
-import SecondIconWhite from '../../public/assets/icons/icono_12_dif.png'
-import ThirdIconWhite from '../../public/assets/icons/icono_13_dif.png'
-import FirstIconOrange from '../../public/assets/icons/icono_11.png'
-import SecondIconOrange from '../../public/assets/icons/icono_12.png'
-import ThirdIconOrange from '../../public/assets/icons/icono_13.png'
-import Image from '../../public/assets/images/image5.jpg'
+import FirstIconWhite from '../../public/assets/icons/icono_11_dif.png?webp';
+import SecondIconWhite from '../../public/assets/icons/icono_12_dif.png?webp';
+import ThirdIconWhite from '../../public/assets/icons/icono_13_dif.png?webp';
+import FirstIconOrange from '../../public/assets/icons/icono_11.png?webp';
+import SecondIconOrange from '../../public/assets/icons/icono_12.png?webp';
+import ThirdIconOrange from '../../public/assets/icons/icono_13.png?webp';
+import Image from '../../public/assets/images/image5.jpg?webp';
 
 const YourData = () => {
     const [isLeftHover, setIsLeftHover] = useState(false);

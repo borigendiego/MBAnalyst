@@ -24,8 +24,10 @@ const OurWork = () => {
                         </div>)
                 }
             </Carousel>
-            <p className={styles.text}>Are you ready to accelerate your business growth?<br/> Get in touch to
-                discover more about what MBAnalyst could do for your business.</p>
+            <p className={styles.text}>
+                Are you ready to accelerate your business growth?<br/> Get in touch to
+                discover more about what MBAnalyst could do for your business.
+            </p>
         </div>
     )
 };

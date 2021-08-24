@@ -3,10 +3,10 @@ import VisibilitySensor from 'react-visibility-sensor';
 //Styles
 import styles from './whoWeAre.module.scss';
 //Images
-import icono5 from '../../public/assets/images/icono_5.png';
-import icono4 from '../../public/assets/images/icono_4.png';
-import image4 from '../../public/assets/images/image4.jpg';
-import image3 from '../../public/assets/images/image3.jpg';
+import icono5 from '../../public/assets/images/icono_5.png?webp';
+import icono4 from '../../public/assets/images/icono_4.png?webp';
+import image4 from '../../public/assets/images/image4.jpg?webp';
+import image3 from '../../public/assets/images/image3.jpg?webp';
 
 const WhoWeAre = () => {
     const [isElement1Visible, setIsElement1Visible1] = useState(false);

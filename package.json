@@ -44,6 +44,7 @@
     "imagemin-optipng": "^8.0.0",
     "imagemin-svgo": "^9.0.0",
     "net": "^1.0.2",
-    "next-optimized-images": "^2.6.2"
+    "next-optimized-images": "^2.6.2",
+    "webp-loader": "^0.6.0"
   }
 }

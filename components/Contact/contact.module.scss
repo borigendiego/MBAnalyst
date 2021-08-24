@@ -9,7 +9,7 @@
 .container::after {
   background-image:
           linear-gradient(to left, rgba(245, 246, 252, 0.01), rgba(255, 253, 253, 0.75)),
-          url('/assets/images/image7.jpg');
+          url('/assets/images/image7.jpg?webp');
   background-size: cover;
   content: "";
   opacity: 0.5;

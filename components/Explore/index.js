@@ -2,7 +2,7 @@ import React from 'react';
 //Style
 import styles from './explore.module.scss'
 import ExploreItem from './exploreItem/ExploreItem';
-import {EXPLORE_DATA} from './constants';
+import { EXPLORE_DATA } from './constants';
 
 const Explore = () => {
     return (
