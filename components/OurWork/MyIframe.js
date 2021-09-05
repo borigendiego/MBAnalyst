@@ -15,4 +15,4 @@ const MyIframe = (props) => {
     )
 };
 
-export default MyIframe
+export default MyIframe;

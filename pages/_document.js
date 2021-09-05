@@ -16,6 +16,7 @@ export default class MyDocument extends Document {
                     <meta property='og:title' content='MBAnalyst' />
                     <meta property='og:description' content='Better Data better decisions | Power BI services' />
                     <meta property='og:site_name' content='MBAnalyst' />
+                    <meta property="og:image" content="https://www.mbanalyst.com/assets/images/image1.jpg?webp"/>
 
                     {/* Global Site Tag (gtag.js) - Google Analytics */}
                     <script
