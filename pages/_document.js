@@ -5,7 +5,9 @@ export default class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <title>MBAnalyst</title>
+                    <title>MBAnalyst - Business Data - Australia, Melbourne</title>
+                    <meta name='description' content='We work with Power BI to create powerful automated reports
+                     to visualise your business data, capture key insights in real time and improve decision making' />
                     <meta name='viewport' content='minimum-scale=1, initial-scale=1, width=device-width, shrink-to-fit=no, user-scalable=no, viewport-fit=cover' />
                     <meta name="theme-color" content="#000000" />
                     <meta
