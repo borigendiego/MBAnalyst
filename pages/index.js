@@ -15,10 +15,10 @@ function App() {
         <div className="App">
             <Header />
             <Banner />
+            <YourData />
+            <Explore />
             <OurServices />
             <WhoWeAre />
-            <Explore />
-            <YourData />
             <Three />
             <OurWork />
             <Contact />

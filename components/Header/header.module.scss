@@ -24,10 +24,39 @@
     font-family: $sections-sub-title-font-family;
     padding: 3% 0;
 
+    &:hover {
+      transform: scale(1.2);
+      transition: transform 250ms;
+    }
+
     li {
       list-style-type: none;
     }
   }
+}
+
+.element {
+  text-decoration: none;
+  position: relative;
+}
+
+.element::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: $main-orange;
+
+  transform: scaleX(0);
+  transform-origin: right;
+  transition: transform 250ms ease-in;
+}
+
+.element:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
 }
 
 @media (max-width: $xs-screen) {

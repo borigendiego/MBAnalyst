@@ -25,7 +25,7 @@ const Header = () => {
             <ul id={'large-screen-menu'} className={styles.menu}>
                 {
                     MENU_LINKS.map((link,index) =>
-                        <a key={index} href={link.linkTo}><li>{link.label}</li></a>
+                        <a key={index} href={link.linkTo}><li className={styles.element}>{link.label}</li></a>
                     )
                 }
             </ul>

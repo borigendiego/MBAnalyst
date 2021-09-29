@@ -14,8 +14,14 @@ const Banner = () => {
                     <h2 className={styles.text}><span className={styles.black_text}>Better</span></h2>
                     <h2 className={styles.text}><span className={styles.black_text}>Data,</span> Better Decisions</h2>
                     <div className={styles.button_container}>
+                        <Link href={'#explore'}>
+                            <button className={`${styles.button} ${styles.button_one}`}>Why choose a bi solution? &#8250;</button>
+                        </Link>
+                        <Link href={'#work'}>
+                            <button className={styles.button}>Explore our dashboards! &#8250;</button>
+                        </Link>
                         <Link href={'#contact'}>
-                            <button className={styles.button}>Start changing your business now!</button>
+                            <button className={styles.button}>Start changing your business now! &#8250;</button>
                         </Link>
                     </div>
                 </div>
