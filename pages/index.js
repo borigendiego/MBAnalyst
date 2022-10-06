@@ -1,14 +1,16 @@
 import React from 'react';
+import dynamic from 'next/dynamic';
 //Components
 import OurServices from '../components/OurServices';
-import Header from "../components/Header";
-import Banner from "../components/Banner";
-import WhoWeAre from "../components/WhoWeAre";
-import Explore from "../components/Explore";
-import YourData from "../components/YourData";
-import Three from "../components/Three";
-import OurWork from "../components/OurWork";
-import Contact from "../components/Contact";
+import Header from '../components/Header';
+import Banner from '../components/Banner';
+import Contact from '../components/Contact';
+
+const WhoWeAre = dynamic(() => import('../components/WhoWeAre'));
+const Explore = dynamic(() => import('../components/Explore'));
+const YourData = dynamic(() => import('../components/YourData'));
+const Three = dynamic(() => import('../components/Three'));
+const OurWork = dynamic(() => import('../components/OurWork'));
 
 function App() {
     return (
