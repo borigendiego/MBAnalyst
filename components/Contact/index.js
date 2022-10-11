@@ -4,15 +4,35 @@ import styles from './contact.module.scss';
 //Fields validations
 import { required, email } from './fieldValidations';
 import { Form } from 'hippo-components';
+//Framer motion
+import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion'
 
 const Contact = () => {
     return (
         <div className={styles.container} id={'contact'}>
             <div className={styles.title}>
-                <h1 className={styles.first_title}>CONTACT</h1>
-                <h1 className={styles.second_title}>AND GET MY QUOTE</h1>
+                <motion.h1
+                    className={styles.first_title}
+                    initial={{opacity: 0, y: -30}}
+                    whileInView={{opacity: 1, y: 0}}
+                    viewport={{ once: true }}
+                    transition={{duration: 0.7, delay: 1}}
+                >CONTACT</motion.h1>
+                <motion.h1
+                    className={styles.second_title}
+                    initial={{opacity: 0, y: -30}}
+                    whileInView={{opacity: 1, y: 0}}
+                    viewport={{ once: true }}
+                    transition={{duration: 0.7, delay: 1.5}}
+                >AND GET MY QUOTE</motion.h1>
             </div>
-            <div className={styles.border}>
+            <motion.div
+                className={styles.border}
+                initial={{opacity: 0, x: -20}}
+                whileInView={{opacity: 1, x: 0}}
+                viewport={{ once: true }}
+                transition={{duration: 1, delay: 1.5}}
+            >
                 <Form
                     fields={[
                         {
@@ -44,7 +64,7 @@ const Contact = () => {
                     customClass={'mbanalyst-contact-form'}
                     emailServiceURL={'https://thehippoapi.netlify.app/.netlify/functions/api/mbanalyst-mail'}
                 />
-            </div>
+            </motion.div>
         </div>
     )
 };

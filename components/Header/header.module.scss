@@ -29,6 +29,14 @@
   }
 }
 
+.navItem {
+  transition: transform 1s;
+}
+
+.navItem:hover {
+  transform: scale(1.1)
+}
+
 @media (max-width: $xs-screen) {
   .menu { display: none; }
 }

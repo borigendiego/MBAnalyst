@@ -6,7 +6,9 @@ import styles from './whoWeAre.module.scss';
 import icono5 from '../../public/assets/images/icono_5.png?webp';
 import icono4 from '../../public/assets/images/icono_4.png?webp';
 import image4 from '../../public/assets/images/image4.jpg?webp';
-import image3 from '../../public/assets/images/image3.jpg?webp';
+import image3 from '../../public/assets/images/image3.jpg?webp'
+//Framer motion
+import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion'
 
 const WhoWeAre = () => {
     const [isElement1Visible, setIsElement1Visible1] = useState(false);
@@ -18,11 +20,22 @@ const WhoWeAre = () => {
         <div className={styles.container}>
             <div className={`${styles.first_section} ${styles.section}`}>
                 <div className={styles.first_overlay}/>
-                <h1>WHO WE ARE</h1>
-                <p className={styles.text}>We are committed to helping businesses make better
+                <motion.h1
+                    initial={{opacity: 0, y: -30}}
+                    whileInView={{opacity: 1, y: 0}}
+                    viewport={{ once: true }}
+                    transition={{duration: 0.7, delay: 1}}
+                >WHO WE ARE</motion.h1>
+                <motion.p
+                    className={styles.text}
+                    initial={{opacity: 0, x: -30}}
+                    whileInView={{opacity: 1, x: 0}}
+                    viewport={{ once: true }}
+                    transition={{duration: 0.7, delay: 1.5}}
+                >   We are committed to helping businesses make better
                     decisions using data. Our expert team will become your trusted adviser on everything data
                     combining passion, knowledge and experience to transform the way your business deals with data.
-                </p>
+                </motion.p>
             </div>
             <VisibilitySensor onChange={onChangeVisibility1}>
                 <div className={`${isElement1Visible ? `${styles.section_icon} ${styles.section} visibleClass` : `${styles.section_icon} ${styles.section}`}`}>

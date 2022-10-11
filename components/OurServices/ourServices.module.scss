@@ -13,17 +13,22 @@
 }
 
 .item {
-    transition: all 1s;
     display: flex;
     justify-content: center;
     flex-direction: column;
     width: 100%;
-    height: 50vh;
+
+    .item_title{
+        font-family: $section-title-font-family;
+        text-align: center;
+        letter-spacing: 1.5px;
+        transition: all 1s;
+    }
 
     .item_image {
         width: 100%;
         height: 80%;
-        transition: all 0.3s ;
+        transition: all 1s ;
         background-size: cover;
         background-position: center;
     }
@@ -31,19 +36,19 @@
     .item_description {
         visibility: hidden;
         opacity: 0;
-        transition: visibility 0s, opacity 0.5s linear;
+        transition: visibility 0.7s, opacity 0.5s ease;
         height: 0;
         text-align: center;
+        transition-delay: 0.5s;
     }
 }
 
 .item:hover {
-    transition: all 2s;
 
     .item_image {
         height: 0;
         position: relative;
-        top: 3rem;
+        top: 5rem;
         visibility: hidden;
         opacity: 0;
     }
@@ -60,16 +65,10 @@
     }
 
     .item_title {
-        transition: all 0.5s;
         margin: 3% 0;
     }
 }
 
-.item_title{
-    font-family: $section-title-font-family;
-    text-align: center;
-    letter-spacing: 1.5px;
-}
 
 .item_text {
     margin: 0 5% 5%;

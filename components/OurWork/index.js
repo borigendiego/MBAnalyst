@@ -7,11 +7,19 @@ import { DASHBOARDS } from './constants';
 import 'react-responsive-carousel/lib/styles/carousel.min.css'; // requires a loader
 import MyIframe from './MyIframe';
 import { Carousel } from 'react-responsive-carousel';
+//Framer motion
+import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion'
 
 const OurWork = () => {
     return (
         <div className={'simple-section-wrapper'} id={'work'}>
-            <h2 className={'section-subtitle'}>OUR WORK</h2>
+            <motion.h2
+                className={'section-subtitle'}
+                initial={{opacity: 0, y: -30}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{ once: true }}
+                transition={{duration: 0.7, delay: 1}}
+            >OUR WORK</motion.h2>
             <Carousel
                 infiniteLoop={true}
                 showStatus={false}

@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 //css
 import styles from './yourData.module.scss';
+//Framer motion
+import {AnimatePresence, motion} from 'framer-motion/dist/framer-motion'
 //Images
 import FirstIconWhite from '../../public/assets/icons/icono_11_dif.png?webp';
 import SecondIconWhite from '../../public/assets/icons/icono_12_dif.png?webp';
@@ -17,8 +19,20 @@ const YourData = () => {
 
     return (
         <div className={styles.container}>
-            <h1 className={styles.title}>EXPLORE YOUR DATA</h1>
-            <div className={styles.content}>
+            <motion.h1
+                className={styles.title}
+                initial={{opacity: 0, y: -30}}
+                whileInView={{opacity: 1, y: 0}}
+                viewport={{ once: true }}
+                transition={{duration: 0.7, delay: 1}}
+            >EXPLORE YOUR DATA</motion.h1>
+            <motion.div
+                className={styles.content}
+                initial={{opacity: 0, x: -20}}
+                whileInView={{opacity: 1, x: 0}}
+                viewport={{ once: true }}
+                transition={{duration: 1, delay: 1.5}}
+            >
                 <div className={styles.items_wrapper}>
                     <div
                         className={`${isTopHover ? `${styles.item} ${styles.hover_element}` : `${styles.item}`}`}
@@ -75,7 +89,7 @@ const YourData = () => {
                         <img src={ThirdIconWhite} alt={'fourth-icon'} className={styles.icon}/>
                     </div>
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 };

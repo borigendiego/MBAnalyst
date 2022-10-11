@@ -42,6 +42,7 @@
   },
   "devDependencies": {
     "core-js": "^3.13.1",
+    "framer-motion": "^7.5.3",
     "hippo-components": "^1.0.0",
     "imagemin-mozjpeg": "^9.0.0",
     "imagemin-optipng": "^8.0.0",
